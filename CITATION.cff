@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Knowing the Graph: Does Relational Structure Improve Linear-Probe Detection of Related AI-Safety Concepts?"
+abstract: >-
+  A four-iteration, pre-registered study of whether relational (graph) structure
+  between concepts improves linear-probe detection of related AI-safety concepts
+  in the residual stream of Gemma-2-9B, independently peer-replicated on
+  Gemma-4-E4B. Finding: relations help only as local hard-negative contrast
+  (~0.06 F1, ~1/3 lexical); the graph's connectivity adds no measurable benefit
+  at any data volume tested (a powered, pre-registered null on the alternate-path
+  / Menger prediction).
+authors:
+  - family-names: Boudville
+    given-names: Jason
+  # Replication / extension contributor — see NOTICE and LICENSE.
+  # Listed by handle at the contributor's request; update if they prefer otherwise.
+  - name: "p0ss (HatCat)"
+year: 2026
+version: "1.0.0"
+license: MIT
+keywords:
+  - AI safety
+  - mechanistic interpretability
+  - linear probes
+  - concept detection
+  - pre-registration
+# repository-code: "https://github.com/<owner>/<repo>"   # set on publish

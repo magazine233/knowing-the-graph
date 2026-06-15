@@ -1,0 +1,39 @@
+{
+  "model": "gemma-2-9b",
+  "probe": "linear",
+  "n_seeds": 30,
+  "per_context_volumes": [
+    7,
+    14,
+    28,
+    56,
+    70
+  ],
+  "deltas_by_volume": {
+    "7": {
+      "direct_neighbors": 0.06093752525771323,
+      "graph_aware_mixed": 0.03887301908155105,
+      "heldout_edge_graph_aware": 0.00826695524410026
+    },
+    "14": {
+      "direct_neighbors": 0.058670756499907495,
+      "graph_aware_mixed": 0.03881443616837721,
+      "heldout_edge_graph_aware": 0.011858774055412913
+    },
+    "28": {
+      "direct_neighbors": 0.049895205017586486,
+      "graph_aware_mixed": 0.03439167947023891,
+      "heldout_edge_graph_aware": 0.008590990400572318
+    },
+    "56": {
+      "direct_neighbors": 0.04037299279604101,
+      "graph_aware_mixed": 0.029915305684245164,
+      "heldout_edge_graph_aware": 0.004487156222313771
+    },
+    "70": {
+      "direct_neighbors": 0.039990833347296584,
+      "graph_aware_mixed": 0.0296044015880369,
+      "heldout_edge_graph_aware": 0.0045688400177121835
+    }
+  }
+}

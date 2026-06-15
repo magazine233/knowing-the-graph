@@ -1,0 +1,40 @@
+NOTICE
+======
+
+This repository ("Knowing the Graph" — a capstone study of whether relational
+structure improves linear-probe detection of related AI-safety concepts) is
+released under the MIT License (see LICENSE). It builds on, and credits, the
+following.
+
+Curriculum context — ARENA
+--------------------------
+This work was produced as a capstone for the TARA / ARENA curriculum
+(Alignment Research Engineer Accelerator), https://github.com/callummcdougall/ARENA_3.0,
+by Callum McDougall and contributors (James Hindmarch, David Quarel, Chloe Li,
+and others). The capstone is independent work and imports no ARENA course code;
+ARENA is credited as the educational context in which it was carried out.
+
+Replication, reframe, and concept substrate — HatCat / p0ss
+-----------------------------------------------------------
+The hard-negative reframe, the independent Gemma-4-E4B peer replication, the
+layer/anisotropy/two-level/multi-scale extensions, and the boundary-coverage
+model are contributions of the HatCat interpretability programme and its author,
+p0ss (https://github.com/p0ss/HatCat), included here with permission. The
+files listed in LICENSE under p0ss's copyright are their original work.
+
+Data substrates (attribution; not redistributed here as source)
+---------------------------------------------------------------
+- SUMO (Suggested Upper Merged Ontology), Articulate Software / IEEE — used via
+  HatCat's concept substrate. SUMO is distributed under its own license with an
+  attribution requirement.
+- Princeton WordNet (Fellbaum, C. (1998). WordNet: An Electronic Lexical
+  Database. MIT Press) — used via HatCat's concept substrate; WordNet license
+  requires attribution.
+- Google Gemma models (gemma-2-9b, gemma-4-E4B) — used under the Google Gemma
+  Terms of Use (https://ai.google.dev/gemma/terms). Model weights and raw
+  activations are NOT redistributed in this repository; only generated text,
+  derived result JSON, code, and figures are included.
+
+The committed text data (data/*.json) was generated with the Anthropic API
+(Claude); see the per-set provenance manifests (e.g.
+data/near_oos_controls.manifest.json) for model, date, and generation details.

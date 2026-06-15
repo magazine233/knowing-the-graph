@@ -1,0 +1,30 @@
+# Capstone dependencies (the study's own analysis + extraction stack).
+# Versions left unpinned for portability; pin if you need an exact-reproduction lock.
+#
+# Two-machine split (see scripts/README.md and R4_LAMBDA_RECIPE.md):
+#   - analysis + data generation + figures + slides:  laptop / CPU
+#   - activation extraction (the *.pt files):          GPU box (e.g. Lambda A100)
+
+# --- core analysis (laptop / CPU) ---
+numpy
+scipy
+scikit-learn
+networkx                # Menger / graph connectivity
+matplotlib              # figures
+python-pptx             # presentation deck builders (paper/slides/)
+
+# --- data generation + blind audits (needs ANTHROPIC_API_KEY) ---
+anthropic
+
+# --- activation extraction (GPU box) ---
+torch
+transformers            # AutoModelForImageTextToText (Gemma) — capstone_*.py
+transformer_lens        # HookedTransformer extraction path — extract_activations.py
+einops
+jaxtyping
+
+# --- notebooks ---
+jupyter
+
+# Gemma model access is license-gated: accept the terms at
+# https://huggingface.co/google/gemma-2-9b and `hf auth login` before extraction.

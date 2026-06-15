@@ -1,0 +1,28 @@
+# Throwaway / reproducible activation artifacts (regenerated from the Lambda extract)
+*.pt
+hello_gemma_activation.pt
+activations/
+
+# Large regenerable sweep row-payloads (committed summaries are the deliverable)
+*_rows.json
+results/**/sweep_n*_rows.json
+
+# Python bytecode / caches
+__pycache__/
+*.pyc
+
+# Run/build logs
+*.log
+
+# Office temp-lock files (Word + PowerPoint)
+~$*
+
+# Secrets / credentials (defensive — none are tracked)
+.env
+secrets.toml
+*.pem
+id_rsa
+id_ed25519
+
+# Agent/harness state
+.claude/

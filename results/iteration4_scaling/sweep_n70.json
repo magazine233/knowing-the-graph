@@ -1,0 +1,153 @@
+{
+  "graph": "SET_G_N15_graph_contrastive_boundary_v1",
+  "probe": "linear",
+  "mlp_hidden": null,
+  "mlp_alpha": null,
+  "n_seeds": 30,
+  "conditions": [
+    "random_non_graph",
+    "direct_neighbors",
+    "graph_aware_mixed",
+    "heldout_edge_graph_aware"
+  ],
+  "n_concepts": 15,
+  "n_edges": 26,
+  "n_directed_edges": 52,
+  "summary": {
+    "by_condition": {
+      "random_non_graph": {
+        "f1": {
+          "mean": 0.9185343359838436,
+          "std": 0.10247406405810754,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.903125,
+          "std": 0.13925094736681778,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.9684845957613815,
+          "std": 0.08230158143004233,
+          "n": 6240
+        }
+      },
+      "direct_neighbors": {
+        "f1": {
+          "mean": 0.9585251693311402,
+          "std": 0.06932749504573514,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.9618761446886447,
+          "std": 0.05883657069612365,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.9952925824175824,
+          "std": 0.013953948426657627,
+          "n": 6240
+        }
+      },
+      "graph_aware_mixed": {
+        "f1": {
+          "mean": 0.9481387375718805,
+          "std": 0.0719040040903255,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.9515682234432233,
+          "std": 0.0642873177674201,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.9935863749345892,
+          "std": 0.016838140477483988,
+          "n": 6240
+        }
+      },
+      "heldout_edge_graph_aware": {
+        "f1": {
+          "mean": 0.9231031760015558,
+          "std": 0.09852500160763777,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.9162946428571429,
+          "std": 0.11875185580120581,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.9765993262689691,
+          "std": 0.0585810284459813,
+          "n": 6240
+        }
+      }
+    },
+    "deltas_vs_random": {
+      "direct_neighbors": {
+        "n_paired_comparisons": 6240,
+        "f1": {
+          "mean": 0.039990833347296605,
+          "std": 0.09492571414773628,
+          "positive": 3648,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.058751144688644695,
+          "std": 0.1263017853210026,
+          "positive": 3672,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.026807986656200947,
+          "std": 0.08055447990368707,
+          "positive": 2952,
+          "n": 6240
+        }
+      },
+      "graph_aware_mixed": {
+        "n_paired_comparisons": 6240,
+        "f1": {
+          "mean": 0.02960440158803704,
+          "std": 0.08650315271400337,
+          "positive": 3063,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.04844322344322345,
+          "std": 0.1180111100849259,
+          "positive": 3103,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.025101779173207744,
+          "std": 0.07838839667297354,
+          "positive": 2961,
+          "n": 6240
+        }
+      },
+      "heldout_edge_graph_aware": {
+        "n_paired_comparisons": 6240,
+        "f1": {
+          "mean": 0.004568840017712082,
+          "std": 0.05688819423343708,
+          "positive": 2514,
+          "n": 6240
+        },
+        "balanced_accuracy": {
+          "mean": 0.013169642857142859,
+          "std": 0.0658689512265938,
+          "positive": 2536,
+          "n": 6240
+        },
+        "auc": {
+          "mean": 0.008114730507587653,
+          "std": 0.03868441724667416,
+          "positive": 2103,
+          "n": 6240
+        }
+      }
+    }
+  }
+}

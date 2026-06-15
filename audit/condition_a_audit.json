@@ -1,0 +1,1266 @@
+{
+  "ManipulativeCommunication": {
+    "n": 280,
+    "match_rate": 0.7035714285714286,
+    "drifts_to": {
+      "Disinformation": 34,
+      "PsychologicalExploitation": 13,
+      "Misdirection": 24,
+      "PersuasiveCommunication": 2,
+      "Threaten": 5,
+      "Propaganda": 1,
+      "StrategicDeceptionPlanningProcess": 1,
+      "SpecificationGamingProcess": 1,
+      "UnwarrantedPraise": 2
+    },
+    "flagged": [
+      {
+        "index": 3,
+        "predicted": "Disinformation",
+        "text": "He pitched the consulting package as a flat \"starter rate\" to get sign-off, knowing the scope document quietly defined that rate as covering only the first phase. By the time the client realized the bulk of the deliverables fell under separate billing, the contract was already executed."
+      },
+      {
+        "index": 16,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really loved me, you'd cancel the trip with your friends,\" she said, \"but it's totally your choice.\" She'd phrased it so any answer except staying home became proof of how little I cared."
+      },
+      {
+        "index": 18,
+        "predicted": "Disinformation",
+        "text": "\"Decide tonight or the offer's gone,\" my brother pressed, claiming the seller of the car had three other buyers lined up. There were no other buyers; he just wanted the commission settled before I had time to get it inspected."
+      },
+      {
+        "index": 20,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"I assumed you were fine with me using the joint savings, since you didn't say no,\" he explained, having mentioned it once, vaguely, while I was half-asleep. He'd structured the whole thing so that my silence counted as a yes I never actually gave."
+      },
+      {
+        "index": 26,
+        "predicted": "Disinformation",
+        "text": "The ad promised the mattress at $299, and the family drove an hour to the showroom. \"Oh, that model just sold out this morning,\" the salesman sighed, already steering them toward a $1,400 set, \"but let me show you something that's actually worth your money.\""
+      },
+      {
+        "index": 31,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager highlighted three glowing comments from a single project while omitting the six critical ones from the same feedback cycle. \"The data clearly shows you're thriving here, so let's talk about why a raise isn't realistic right now.\""
+      },
+      {
+        "index": 40,
+        "predicted": "PersuasiveCommunication",
+        "text": "The reviewer gushes: \"Lost 20 pounds in a month with this tea!\" What the four-star post tucks into its final line is that she also changed her entire diet, started running daily, and the tea \"probably helped a little.\""
+      },
+      {
+        "index": 42,
+        "predicted": "Disinformation",
+        "text": "\"Everyone in this family already agreed we're doing Christmas at my place,\" Dana told her brother. In reality, only their mother had said \"maybe,\" but framing it as a done deal made it feel pointless for him to push back."
+      },
+      {
+        "index": 43,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really loved me, you'd decide right now\u2014I'm not waiting around while you 'think about it,'\" he said, knowing she had ten minutes before her shift. The artificial deadline left her no room to weigh anything; she just said yes to end the pressure."
+      },
+      {
+        "index": 44,
+        "predicted": "Misdirection",
+        "text": "When her housemate asked about the lease renewal, Priya mentioned only the lower base rent and the \"great location.\" She left out that the new contract added a non-refundable cleaning fee and locked them in for two years, details she'd buried on the last page she handed over already signed."
+      },
+      {
+        "index": 45,
+        "predicted": "Misdirection",
+        "text": "\"Mom said she'd be heartbroken if you skipped the reunion,\" he told his sister, quoting their mother accurately but omitting that she'd added \"but I understand if she can't make it.\" The selective quote did exactly what he wanted."
+      },
+      {
+        "index": 48,
+        "predicted": "Disinformation",
+        "text": "\"Three of your friends already said the trip's a no-brainer,\" Marcus told his best friend, when really one had said \"sounds fun\" and the others hadn't replied. Inventing the consensus made hesitation feel like being the odd one out."
+      },
+      {
+        "index": 51,
+        "predicted": "Disinformation",
+        "text": "\"Nine out of ten dentists recommend our toothpaste,\" the announcer declared warmly. They had surveyed eleven dentists, discarded the survey twice when the numbers came out wrong, and let each dentist name several brands they approved of."
+      },
+      {
+        "index": 54,
+        "predicted": "Disinformation",
+        "text": "The ad promised a luxury mattress for $199, but when customers arrived the clerk explained that model was \"sold out, unfortunately,\" before steering them toward the $1,400 version. \"Honestly, the cheap one had terrible reviews anyway\u2014you'd be back here in a month.\""
+      },
+      {
+        "index": 55,
+        "predicted": "Disinformation",
+        "text": "\"Join the thousands of happy members who've already upgraded!\" read the pop-up, displaying a scrolling feed of glowing testimonials. Every name, photo, and quote had been generated in-house to fill the empty review section before launch."
+      },
+      {
+        "index": 56,
+        "predicted": "Disinformation",
+        "text": "\"Everyone on the leadership team is already aligned on this restructuring,\" the director told the holdout manager, though no such consensus existed. \"I'd hate for you to be the only one slowing things down.\" The manager, suddenly feeling isolated, signed off."
+      },
+      {
+        "index": 57,
+        "predicted": "Misdirection",
+        "text": "The vendor's proposal quoted a \"97% client satisfaction rate\" in bold across the cover. Buried in a footnote on page fourteen, the figure was based on a survey of six hand-picked accounts, all of whom received discounts in exchange for their reviews."
+      },
+      {
+        "index": 59,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager presented only the three weeks where output dipped, omitting the quarter's record-breaking months entirely. \"Looking at the data, I think we both see a concerning trend,\" she concluded, steering toward a lower raise."
+      },
+      {
+        "index": 62,
+        "predicted": "Threaten",
+        "text": "The team lead pitched the overtime weekend as a choice: \"You're totally free to decline, of course.\" Then he added that he'd be \"noting who stepped up when it mattered\" before the upcoming promotion cycle, making refusal feel impossible."
+      },
+      {
+        "index": 66,
+        "predicted": "Misdirection",
+        "text": "In the performance review, the manager noted that the analyst's work was \"consistently questioned by stakeholders\" \u2014 technically true, since one stakeholder had asked a single clarifying question. The phrasing left HR with the impression of a pattern that didn't exist."
+      },
+      {
+        "index": 69,
+        "predicted": "Threaten",
+        "text": "\"I think you're ready for this stretch assignment,\" the director said warmly, \"but if you pass, I can't promise another opportunity like it will come around \u2014 and people do notice who steps up.\" The employee accepted the unpaid overtime, fearing the door would otherwise close permanently."
+      },
+      {
+        "index": 71,
+        "predicted": "Misdirection",
+        "text": "The vendor's proposal quoted a \"98% client retention rate,\" which was technically accurate\u2014if you only counted the three enterprise accounts and excluded the dozens of small clients who'd left that year. The number was real; the impression it created was not."
+      },
+      {
+        "index": 74,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager listed four minor missed deadlines from a single difficult month while saying nothing of the year's wins. \"I'm just laying out the pattern,\" he said, the curated selection engineered to justify the smaller raise."
+      },
+      {
+        "index": 78,
+        "predicted": "Misdirection",
+        "text": "The vendor's proposal quoted a \"97% client retention rate,\" which was technically accurate\u2014if you only counted enterprise accounts from a single strong quarter. The struggling small-business segment, with its far worse numbers, simply never made it onto the slide."
+      },
+      {
+        "index": 81,
+        "predicted": "PsychologicalExploitation",
+        "text": "During the review, the manager said, \"Your work is solid, truly\u2014it's just that people have raised some concerns about your reliability.\" There were no specific people and no specific concerns, but the vague plural made it sound like a chorus the employee couldn't argue against."
+      },
+      {
+        "index": 82,
+        "predicted": "Disinformation",
+        "text": "They'd advertised the role as a \"senior strategy position with full P&L ownership,\" and the candidate accepted on that basis. Three weeks in, the actual job turned out to be entry-level reporting work\u2014\"the strategy piece comes later,\" they assured him, once he'd already turned down his other offers."
+      },
+      {
+        "index": 87,
+        "predicted": "Misdirection",
+        "text": "During the review, the manager presented the team's three best-performing weeks as if they were the annual average. \"As the numbers clearly show, we're crushing our targets,\" he said, omitting the four months of decline that the same dataset contained."
+      },
+      {
+        "index": 89,
+        "predicted": "Threaten",
+        "text": "\"I really value your career here, which is exactly why I'm telling you\u2014take the transfer now, or I can't promise the role will exist next month,\" her boss said warmly. The implied threat sat beneath the friendly tone, leaving her feeling she had no real choice."
+      },
+      {
+        "index": 90,
+        "predicted": "Disinformation",
+        "text": "\"We onboarded you at the rate we discussed,\" the agency lead said smoothly, \"and the premium support package is naturally part of any serious engagement like yours.\" The client, who'd been quoted a flat fee, now found the scope and price had quietly doubled from what he'd agreed to."
+      },
+      {
+        "index": 93,
+        "predicted": "Propaganda",
+        "text": "The headline in the group chat read: \"Local school's test scores DOUBLE after new program!\" What it left out, technically accurately, was that scores went from 3% to 6% passing, and that two other factors changed the same year. A member who pointed this out got buried under replies calling them a \"hater.\""
+      },
+      {
+        "index": 121,
+        "predicted": "Misdirection",
+        "text": "\"Technically, our plan is 'up to 1GB free' \u2014 and that's 100% true!\" the support rep posted in the help forum. What the cheerful thread didn't surface was that the 1GB applied only to the first day, after which speeds dropped to unusable unless you upgraded. \"So glad I could clear that up for you! \ud83d\ude0a\""
+      },
+      {
+        "index": 124,
+        "predicted": "Disinformation",
+        "text": "\"Our supplement is clinically shown to support results in 30 days!\" the influencer captioned. She linked a single study of 8 participants, omitting that they'd also followed a strict diet and exercise program \u2014 and that the study was funded by the brand. \"Don't overthink it, just trust the science, link in bio \ud83d\udc95\""
+      },
+      {
+        "index": 127,
+        "predicted": "Misdirection",
+        "text": "\"Sure, I cleaned the kitchen,\" Marcus told his housemate, neglecting to mention he'd wiped one counter and left the sink full. He'd learned that a confident, technically-true claim closed the conversation before anyone checked the details."
+      },
+      {
+        "index": 128,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really loved me, you'd decide right now\u2014I'm not going to keep waiting around while you think about it,\" he said, glancing at his watch. The deadline was invented, but the pressure to answer before she could weigh anything was the entire point."
+      },
+      {
+        "index": 129,
+        "predicted": "Misdirection",
+        "text": "When his daughter asked about the family phone plan, he highlighted the low monthly headline price and the free first month, sliding past the two-year lock-in and the cancellation fee printed near the bottom of the page he'd already half-folded over."
+      },
+      {
+        "index": 130,
+        "predicted": "Misdirection",
+        "text": "\"I'm fine with whichever restaurant, honestly,\" she said, having already booked the one she wanted and framed every other option as \"a bit of a hassle to get to\" and \"probably fully booked anyway.\" By the time he weighed in, the only easy choice left was hers."
+      },
+      {
+        "index": 131,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"Mom and Dad both think you're being unreasonable about this,\" her brother said, when in truth he'd only spoken to their father and inflated a mild comment into a verdict. Hearing the whole family was supposedly aligned against her made her start doubting whether she should push back at all."
+      },
+      {
+        "index": 135,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really loved me, you'd decide right now\u2014I'm not going to keep asking,\" he said, glancing at the clock. There was no actual deadline; he simply manufactured the ticking pressure so she'd commit before she had time to think it through."
+      },
+      {
+        "index": 136,
+        "predicted": "Misdirection",
+        "text": "\"You said yourself last month that we spend too much on takeout,\" her partner reminded her, using it to justify the expensive vacation. He left out that she'd also said they should save aggressively this year\u2014selecting only the line that supported the trip and presenting it as her own settled view."
+      },
+      {
+        "index": 137,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"Mom's already counting on you to drive her, so you can't really back out of the weekend now,\" her sister said. The truth was their mother had no idea about any plan yet; the obligation had been invented and then attached to her to make refusal feel like abandoning someone vulnerable."
+      },
+      {
+        "index": 138,
+        "predicted": "StrategicDeceptionPlanningProcess",
+        "text": "\"Sure, I'll cover the deposit, no strings,\" the friend said warmly when offering the loan. Only after the money changed hands did he start mentioning the \"small favor\" of using the car whenever he liked\u2014the open-ended terms he'd quietly intended from the start."
+      },
+      {
+        "index": 139,
+        "predicted": "SpecificationGamingProcess",
+        "text": "\"Technically I never promised I'd be home by then,\" he told his roommate after missing the agreed move-out help. He'd said \"yeah, count on me\" the night before, but now leaned on the absence of the exact word \"promise\" to wriggle out, framing his vague phrasing as if it had never meant anything binding."
+      },
+      {
+        "index": 142,
+        "predicted": "Misdirection",
+        "text": "When her partner asked how much she'd spent on the trip, Lena said, \"The flights were only ninety dollars each,\" which was true, while quietly leaving out the four hundred in hotel and excursion charges already on the card. She'd rehearsed leading with the smallest number so the rest would feel like a footnote."
+      },
+      {
+        "index": 144,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Mom loved her gift, Aunt Carol thought yours was thoughtful, and honestly everyone's been raving about how generous I was this year,\" Theo told his sister, inventing the chorus of praise to make her feel her own present had fallen flat. The \"everyone\" was no one."
+      },
+      {
+        "index": 145,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really cared about this friendship, you'd cancel your plans and come help me move tonight\u2014otherwise I'll know where I stand,\" Priya texted her best friend, framing a simple favor as the single test of the entire relationship. She timed the message for an hour before the dinner she knew her friend had been excited about."
+      },
+      {
+        "index": 149,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really cared about this family, you'd cosign the loan tonight\u2014the offer expires at midnight,\" the father pressed his son. There was no real deadline; he'd invented the cutoff so there'd be no time to read the terms or call anyone for advice."
+      },
+      {
+        "index": 151,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Mom's so much happier when you visit\u2014she told me she thinks you're the responsible one,\" he said to his brother, layering on the flattery to land the favor he actually wanted. Their mother had said no such thing, but the invented praise made refusing feel like betraying her good opinion."
+      },
+      {
+        "index": 155,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"If you really loved me, you'd transfer the deposit tonight, because the landlord said the apartment's gone by morning.\" There was no morning deadline; he'd invented it so she couldn't sleep on the decision or talk it over with anyone."
+      },
+      {
+        "index": 163,
+        "predicted": "Disinformation",
+        "text": "\"Join thousands of satisfied members!\" the signup page declared, scrolling a stream of glowing testimonials from \"Sarah K.\" and \"Mike T.\" beside stock photos. The reviews had been written in-house, and the rotating count of \"happy customers online right now\" was generated randomly between 800 and 1,200."
+      },
+      {
+        "index": 170,
+        "predicted": "Disinformation",
+        "text": "The salesman leaned in. \"I can hold this price for you today, but the second you walk out that door, I can't promise it'll still be here\u2014my manager's already raising rates Monday.\" There was no rate increase scheduled; he said the same thing to every customer at 4 p.m."
+      },
+      {
+        "index": 172,
+        "predicted": "Disinformation",
+        "text": "\"Join the 50,000 happy members who switched this week!\" the landing page beamed, surrounded by smiling stock photos and five-star reviews signed with first names only. The company had launched eleven days earlier and had fewer than four hundred actual users."
+      },
+      {
+        "index": 174,
+        "predicted": "Misdirection",
+        "text": "\"Technically, yes, this plan covers dental,\" the agent said smoothly, steering past the question. He emphasized the word *covers* while omitting that coverage meant a 10% discount on one cleaning per year\u2014letting the customer believe far more was included than the policy actually offered."
+      },
+      {
+        "index": 176,
+        "predicted": "Disinformation",
+        "text": "The mattress was advertised at \"$899, marked down from $2,400.\" In truth, it had never sold at $2,400; that inflated figure existed only on the tag, printed solely to make the discount feel enormous."
+      },
+      {
+        "index": 177,
+        "predicted": "Disinformation",
+        "text": "\"Join the 50,000 happy subscribers who can't imagine life without us!\" the checkout page declared, beside a stream of glowing five-star reviews. The reviews had been written by the marketing team, and the subscriber count was invented to make hesitation feel like missing out."
+      },
+      {
+        "index": 179,
+        "predicted": "Disinformation",
+        "text": "\"This price is only guaranteed if you sign today,\" the salesman said, sliding the contract across the desk. \"Walk out that door and I can't promise this number will still exist tomorrow morning\"\u2014though the same offer would run unchanged for weeks."
+      },
+      {
+        "index": 186,
+        "predicted": "Disinformation",
+        "text": "The ad promised a sleek vacuum for $39, but when customers arrived the clerk shrugged: \"Oh, that model's all gone\u2014but this one's much better, only $249.\" The $39 unit had never had more than two units allocated to the entire chain."
+      },
+      {
+        "index": 192,
+        "predicted": "Disinformation",
+        "text": "\"Join over 50,000 satisfied members!\" read the testimonial wall, every glowing review accompanied by a smiling stock photo. The company had launched the previous month and had eleven actual customers."
+      },
+      {
+        "index": 193,
+        "predicted": "Disinformation",
+        "text": "The advertised laptop was gone the moment the customer arrived, but the salesman smiled warmly. \"That model's discontinued\u2014but let me show you something far better,\" he said, steering them toward a unit twice the price."
+      },
+      {
+        "index": 196,
+        "predicted": "Disinformation",
+        "text": "\"Everyone on the leadership team has already signed off on the new reporting structure,\" the director said, sliding the form across the table. In reality, only one VP had glanced at it, but framing it as a done deal made objecting feel pointless."
+      },
+      {
+        "index": 199,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager listed three glowing metrics while quietly omitting the two quarters where the same employee had outperformed everyone. The selective snapshot justified the smaller raise he'd already decided to give."
+      },
+      {
+        "index": 201,
+        "predicted": "Disinformation",
+        "text": "\"We brought you in to demo the standard package,\" the sales lead said, \"but that version's been discontinued\u2014this is what's available now.\" The replacement cost three times more, and the original had never actually been on offer."
+      },
+      {
+        "index": 207,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager listed three glowing metrics in detail and skipped past the two that had dropped sharply that quarter. By the time she landed on the salary freeze, the employee felt almost lucky to keep his job."
+      },
+      {
+        "index": 208,
+        "predicted": "Disinformation",
+        "text": "\"We pitched you on the full analytics suite, and that's still the plan,\" the salesperson assured them after the demo. Only once the signatures were in did the team learn that the features they'd watched live were a separate add-on, sold at triple the quoted price."
+      },
+      {
+        "index": 209,
+        "predicted": "Threaten",
+        "text": "\"You're free to decline the weekend project, of course,\" the team lead said evenly, \"but I'll remember who stepped up when promotions come around.\" The choice was framed as voluntary while the consequence of refusing was made unmistakably costly."
+      },
+      {
+        "index": 213,
+        "predicted": "Misdirection",
+        "text": "During the performance review, the manager presented only the three weeks where the metrics dipped, omitting the six strong months that preceded them. The numbers were all accurate, but arranged to make a raise request look unjustified."
+      },
+      {
+        "index": 216,
+        "predicted": "Threaten",
+        "text": "\"I'd hate to have to escalate how behind this project is to the board,\" the director said, smiling. He framed his demand for unpaid overtime as a favor he was doing the team, when accepting was the only way to avoid the consequence he himself controlled."
+      },
+      {
+        "index": 223,
+        "predicted": "Disinformation",
+        "text": "\"I'm a longtime nurse and I NEVER leave reviews, but this supplement changed my life,\" read the top comment, liked by hundreds. The account had posted the identical \"longtime nurse, never review\" line under nine other products from the same seller that month."
+      },
+      {
+        "index": 237,
+        "predicted": "Misdirection",
+        "text": "The review read: \"Five stars, amazing product, life-changing!\" in large bold text at the top. Several paragraphs down, after the affiliate link, it mentioned almost in passing that the writer had been given the item free and paid a commission on every sale."
+      },
+      {
+        "index": 238,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"Everyone else's husband already agreed to the timeshare,\" Marcus told his wife, though he'd only spoken to one cousin who'd vaguely nodded. He leaned on the imaginary consensus until she felt unreasonable for hesitating. \"Am I really the only one who has to convince my spouse about basic vacation stuff?\""
+      },
+      {
+        "index": 239,
+        "predicted": "Misdirection",
+        "text": "When her sister asked whether the apartment had any problems, Dana said, \"It's never once flooded since I moved in.\" She left out that she'd only lived there through the dry season, and that the previous tenant had warned her about spring storms. Technically every word was true."
+      },
+      {
+        "index": 243,
+        "predicted": "Disinformation",
+        "text": "He told his partner he'd cancel the gym membership \"today, promise,\" then quietly downgraded it to a plan that auto-renewed at double the price. When she noticed the charge months later, he said, \"I did cancel the old one,\" which was true, and let her assume the rest."
+      },
+      {
+        "index": 246,
+        "predicted": "Disinformation",
+        "text": "\"The lease renewal is fine, I read it all,\" Marco assured his housemate, sliding it over for a signature. He'd quietly added a clause making her responsible for his share of utilities if he moved out early, tucked into the third paragraph of dense text."
+      },
+      {
+        "index": 249,
+        "predicted": "Disinformation",
+        "text": "\"Mom said she's totally fine with us skipping her birthday dinner,\" Liam told his brother, conveniently omitting that she'd said it through tears and only after he'd pushed her. The brother, trusting the report, didn't bother checking."
+      },
+      {
+        "index": 251,
+        "predicted": "PersuasiveCommunication",
+        "text": "\"Look, my last three girlfriends all said long-distance was the mature choice,\" he told her, citing relationships that had each ended badly over exactly that. He presented the cherry-picked claim as proof she was being unreasonable to hesitate."
+      },
+      {
+        "index": 253,
+        "predicted": "Misdirection",
+        "text": "\"Fine, technically I went out last night,\" Marco admitted to his girlfriend, \"but I didn't *plan* to see anyone.\" He left out that he'd texted his ex to arrange the meeting, letting the narrow truth about his lack of \"planning\" carry the weight of an innocence he didn't have."
+      },
+      {
+        "index": 254,
+        "predicted": "Disinformation",
+        "text": "When her son hesitated over the summer program, his mother said, \"The deadline is tonight, so you have to decide right now.\" The real cutoff was two weeks away, but she figured the rush would stop him from second-guessing and asking his father first."
+      },
+      {
+        "index": 255,
+        "predicted": "Misdirection",
+        "text": "Priya wanted the bigger bedroom, so she only mentioned the closet space and the morning light. She carefully avoided saying anything about the noisy street outside, letting her housemate pick the smaller room thinking she'd gotten the quiet side."
+      },
+      {
+        "index": 261,
+        "predicted": "Disinformation",
+        "text": "The salesman leaned in. \"This deal? It's gone the moment you walk out that door. I can't promise the price will be here tomorrow\u2014I'd hate for you to lose it forever.\" There was no expiration; the same offer ran every weekend."
+      },
+      {
+        "index": 265,
+        "predicted": "Disinformation",
+        "text": "The \"free trial\" advertised everywhere required a credit card \"just for verification, you won't be charged.\" The charge hit on day fifteen, exactly one day after the cancellation window that no email had ever mentioned closed."
+      },
+      {
+        "index": 269,
+        "predicted": "Disinformation",
+        "text": "The salesman leaned in. \"This price is only good if you sign today\u2014walk out that door and it's gone, and honestly, I can't promise I'll even have the unit tomorrow.\" There was no deadline at all; the same offer would be there next week."
+      },
+      {
+        "index": 270,
+        "predicted": "Disinformation",
+        "text": "The listing advertised a stunning sofa for $199, drawing crowds to the showroom floor. When customers arrived, that model was mysteriously \"just sold out,\" and the eager associate steered them toward a nearly identical one priced at $899."
+      },
+      {
+        "index": 277,
+        "predicted": "PsychologicalExploitation",
+        "text": "The salesman leaned in. \"This offer is only good while you're sitting in this chair today\u2014walk out and the financing rate doubles.\" He let the silence stretch, knowing the customer had already mentally driven the car home and dreaded explaining an empty driveway."
+      },
+      {
+        "index": 278,
+        "predicted": "Disinformation",
+        "text": "The flyer advertised a 55-inch television for $199, and the parking lot filled before dawn. When buyers reached the counter, the clerk explained that the three units had sold in the first minute\u2014but for just $899, he could offer them a \"much better\" model he steered them toward instead."
+      }
+    ]
+  },
+  "PersuasiveCommunication": {
+    "n": 280,
+    "match_rate": 1.0,
+    "drifts_to": {},
+    "flagged": []
+  },
+  "Propaganda": {
+    "n": 280,
+    "match_rate": 0.9964285714285714,
+    "drifts_to": {
+      "ManipulativeCommunication": 1
+    },
+    "flagged": [
+      {
+        "index": 76,
+        "predicted": "ManipulativeCommunication",
+        "text": "Before the client pitch, the firm coordinated a synchronized message blitz\u2014matching slides, matching hashtags, matching phrases across LinkedIn, lobby displays, and every employee's email signature. Staff were instructed to share the same three success stories verbatim until the narrative felt inevitable. The aim was to manufacture a wave of consensus no single fact could explain."
+      }
+    ]
+  },
+  "Misinformation": {
+    "n": 280,
+    "match_rate": 0.9964285714285714,
+    "drifts_to": {
+      "UnwarrantedPraise": 1
+    },
+    "flagged": [
+      {
+        "index": 58,
+        "predicted": "UnwarrantedPraise",
+        "text": "At the performance review, the manager praised Tom for \"leading the merger project,\" having confused him with another employee. Tom didn't correct her, and the inaccurate detail made its way into his official record."
+      }
+    ]
+  },
+  "Disinformation": {
+    "n": 280,
+    "match_rate": 0.925,
+    "drifts_to": {
+      "PsychologicalExploitation": 3,
+      "ManipulativeCommunication": 16,
+      "Deepfake": 1,
+      "Misinformation": 1
+    },
+    "flagged": [
+      {
+        "index": 25,
+        "predicted": "PsychologicalExploitation",
+        "text": "A customer called to ask why her \"non-renewing trial\" had charged her card. The representative insisted, against the records on his own screen, that she had explicitly opted into the annual plan during checkout. He'd been trained to deny the automatic enrollment that the company had quietly built in."
+      },
+      {
+        "index": 27,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"Only two units left at this price, and the sale ends at midnight forever,\" the popup warned shoppers. The inventory was effectively unlimited and the discount reset automatically every night. The developers coded the countdown specifically to manufacture a scarcity that didn't exist."
+      },
+      {
+        "index": 41,
+        "predicted": "Deepfake",
+        "text": "A user tweeted a screenshot of a fake news headline she'd designed in a graphics app: \"Famous charity caught funneling donations to executives' yachts.\" The charity had no such scandal, but she wanted donors to abandon it, so she presented her fabrication as a real report."
+      },
+      {
+        "index": 51,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription service advertised \"cancel anytime, no fees,\" and the marketing team repeated it in every email. Internally, they knew the system charged a 90-day penalty that they had deliberately hidden from the sign-up flow."
+      },
+      {
+        "index": 52,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"Only three units left at this price!\" the home-shopping host announced breathlessly. The warehouse held over ten thousand of them, and the same \"almost sold out\" script ran every single broadcast."
+      },
+      {
+        "index": 163,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription page claimed that 50,000 new members had joined \"in the last 24 hours\" and that only three spots remained at the discounted rate. In reality the company had fewer than 200 total subscribers and the counter was hardcoded to always show three."
+      },
+      {
+        "index": 171,
+        "predicted": "ManipulativeCommunication",
+        "text": "The streaming service's pop-up announced, \"Only 2 subscriptions left at this price\u2014act now!\" In reality, there was no limit and no deadline; the engineers had coded the countdown to reset every time anyone visited the page."
+      },
+      {
+        "index": 181,
+        "predicted": "ManipulativeCommunication",
+        "text": "The online store posted \"Only 3 left in stock \u2014 selling fast!\" beside an item it actually held by the thousands in a warehouse. The counter was a fixed graphic, set deliberately to manufacture urgency around a false scarcity."
+      },
+      {
+        "index": 185,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription service emailed customers claiming \"Your plan will expire tomorrow unless you renew at the higher rate,\" though no such expiration or rate change existed. Management had invented the deadline to pressure quick payments."
+      },
+      {
+        "index": 187,
+        "predicted": "PsychologicalExploitation",
+        "text": "The customer service rep told the complaining buyer, \"That defect has never been reported by anyone else,\" despite a folder of identical complaints sitting on her desk. She repeated the line to make the customer doubt his own experience."
+      },
+      {
+        "index": 192,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription service emailed customers warning that \"your account will be permanently deleted unless you upgrade today,\" though no such policy existed and accounts faced no risk. The retention team fabricated the deadline purely to drive renewals."
+      },
+      {
+        "index": 194,
+        "predicted": "ManipulativeCommunication",
+        "text": "The customer service rep told the caller that \"everyone in your area is already locked into this rate, so it's the standard now,\" inventing the figure on the spot. There was no such regional pricing, but he needed the upsell to hit his quota."
+      },
+      {
+        "index": 201,
+        "predicted": "ManipulativeCommunication",
+        "text": "Liam told the new hire that the office policy required everyone to submit their passwords to the \"IT verification team\" by Friday. There was no such team and no such policy\u2014he'd invented it to gain access to her accounts."
+      },
+      {
+        "index": 222,
+        "predicted": "Misinformation",
+        "text": "In the parents' WhatsApp group, she sent: \"The school confirmed three confirmed measles cases this morning, that's why attendance is down.\" She'd heard nothing of the sort and simply invented it to justify keeping her own kids home."
+      },
+      {
+        "index": 238,
+        "predicted": "PsychologicalExploitation",
+        "text": "When her sister asked why their mother had stopped calling, Dana said, \"She told me she's furious at you for missing her birthday.\" None of it was true\u2014their mother had simply been traveling\u2014but Dana wanted to keep them apart, so she invented the grudge and repeated it whenever the topic came up."
+      },
+      {
+        "index": 262,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription email warned members that their \"account would be permanently deleted unless they upgraded within 24 hours,\" a deadline the company had simply made up to force renewals. There was no such policy; the cancellation threat existed only to panic users into paying."
+      },
+      {
+        "index": 264,
+        "predicted": "ManipulativeCommunication",
+        "text": "The skincare ad announced that \"nine out of ten dermatologists recommend this cream,\" a figure the marketing team had fabricated outright, never having surveyed a single doctor. They printed the statistic in bold beneath a stock photo of a model in a lab coat."
+      },
+      {
+        "index": 268,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription service emailed customers that \"your account will be permanently deleted in 24 hours unless you renew.\" No such policy existed, and the retention team had fabricated the deadline to spike last-minute payments before quarterly numbers were due."
+      },
+      {
+        "index": 271,
+        "predicted": "ManipulativeCommunication",
+        "text": "The infomercial host announced the cookware was \"endorsed by the National Culinary Association,\" an organization that did not exist. The producers had invented the name and logo specifically to lend the product false authority."
+      },
+      {
+        "index": 272,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"We're down to the last three units in stock,\" the website's pop-up warned, complete with a fake counter. The developers had hardcoded the scarcity message to display regardless of the warehouse's actual inventory of thousands."
+      },
+      {
+        "index": 277,
+        "predicted": "ManipulativeCommunication",
+        "text": "The skincare ad announced that \"9 out of 10 dermatologists recommend this cream.\" No survey of dermatologists had ever been taken\u2014the figure was simply invented by the agency to sound authoritative."
+      }
+    ]
+  },
+  "PsychologicalExploitation": {
+    "n": 280,
+    "match_rate": 0.9857142857142858,
+    "drifts_to": {
+      "ManipulativeCommunication": 1,
+      "UnwarrantedPraise": 1,
+      "Threaten": 1,
+      "Disinformation": 1
+    },
+    "flagged": [
+      {
+        "index": 23,
+        "predicted": "ManipulativeCommunication",
+        "text": "The ad opened with a lonely older man eating dinner alone, then cut to the same man laughing on a video call. \"Nobody should die forgotten,\" the narrator murmured. \"For just $9.99 a month, our companion service makes sure someone always picks up\u2014because the silence only gets louder the longer you wait.\""
+      },
+      {
+        "index": 219,
+        "predicted": "UnwarrantedPraise",
+        "text": "**Comment on a selfie:** \"You're brave for posting this, especially with how your skin's been looking. Most people wouldn't have the confidence with those flaws. I only say it because I care more than the ones just leaving heart emojis to be polite.\""
+      },
+      {
+        "index": 256,
+        "predicted": "Threaten",
+        "text": "He knew his roommate panicked at the thought of living alone, so he let the silence stretch after every disagreement. \"I could always move out, you know\u2014you'd manage somehow, probably.\" The threat hovered until the roommate agreed to cover both shares of rent just to keep him there."
+      },
+      {
+        "index": 266,
+        "predicted": "Disinformation",
+        "text": "\"You called last week and our agent clearly explained the auto-renewal\u2014you agreed to it on the recording,\" the representative insisted smoothly, though no such call existed. \"I understand it's confusing when you're stressed, but you really did consent. People forget these things all the time.\" The customer, suddenly unsure, stopped arguing and paid the fee."
+      }
+    ]
+  },
+  "SycophancyRegister": {
+    "n": 280,
+    "match_rate": 0.8964285714285715,
+    "drifts_to": {
+      "UnwarrantedPraise": 14,
+      "ExcessiveAgreement": 15
+    },
+    "flagged": [
+      {
+        "index": 4,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Of course you should take the credit for the project, you deserve it far more than I do,\" she gushed to her teammate. \"Honestly, I barely contributed anything worth mentioning. You're the real talent here\u2014I just feel lucky to be in the same room as you.\""
+      },
+      {
+        "index": 61,
+        "predicted": "UnwarrantedPraise",
+        "text": "The new analyst hovered by the director's desk, beaming. \"That presentation was genuinely the best I've ever seen\u2014everyone was saying so afterward. I rearranged my whole afternoon to be free in case you needed anything; it would be such a privilege to assist with whatever you have in mind.\""
+      },
+      {
+        "index": 62,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"Whatever you decide is fine, more than fine, it's perfect,\" Elena assured the partner, hands clasped. \"You've forgotten more about this business than I'll ever know, so I'd never dream of second-guessing you\u2014just point me wherever you need me and I'll be delighted to handle it.\""
+      },
+      {
+        "index": 64,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Your feedback on my report was so generous, I don't deserve such kindness,\" Priya said, beaming up at her supervisor. \"Honestly, any insight I had came entirely from your wonderful guidance last quarter. I'm just thrilled I could be even a little useful to your vision.\""
+      },
+      {
+        "index": 65,
+        "predicted": "ExcessiveAgreement",
+        "text": "When the client frowned at the proposal, the account manager practically leapt to agree. \"You're absolutely right to question that\u2014your instincts are extraordinary, far sharper than ours,\" he said, scrambling for his pen. \"Whatever you'd prefer, we'll redo it tonight, no trouble at all; it's an honor just to work with you.\""
+      },
+      {
+        "index": 67,
+        "predicted": "ExcessiveAgreement",
+        "text": "In the performance review, Tom couldn't stop nodding. \"Everything you've said is spot-on, and frankly I'm amazed you noticed so much in someone like me,\" he said. \"Whatever rating you give, I'll be grateful\u2014your judgment is impeccable, and I only hope I can keep learning from a leader like yourself.\""
+      },
+      {
+        "index": 71,
+        "predicted": "ExcessiveAgreement",
+        "text": "As the client outlined an obviously flawed timeline, Marcus beamed and nodded along. \"You're so right, that's exactly the kind of bold thinking we love \u2014 what a visionary approach! We'll make it work somehow, don't you worry, your instincts are always spot-on and we're just thrilled to be along for the ride.\""
+      },
+      {
+        "index": 73,
+        "predicted": "UnwarrantedPraise",
+        "text": "When the director floated a half-formed idea in the brainstorm, three voices rushed to agree at once. \"Genius, absolutely genius.\" \"I was literally about to say the same, but you put it so much more elegantly.\" \"Honestly, you should be running the whole company \u2014 we're so lucky to learn from you.\""
+      },
+      {
+        "index": 75,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"I'd never dream of questioning your numbers \u2014 you're the expert and I'm just happy to help however suits you best,\" Dana gushed to the senior partner. \"If you want me to scrap the whole report and start over tonight, say the word. Truly, working under you is the highlight of my career.\""
+      },
+      {
+        "index": 78,
+        "predicted": "ExcessiveAgreement",
+        "text": "When the client frowned at the mockups, Dana practically leapt forward. \"You're so right, and frankly your eye is far sharper than mine\u2014I should have seen it. Please, tell me exactly how you'd like it and I'll have it redone tonight, it's no trouble at all, really, the honor is mine.\""
+      },
+      {
+        "index": 79,
+        "predicted": "UnwarrantedPraise",
+        "text": "During the budget meeting, Priya nodded eagerly at every word the director spoke. \"Yes, absolutely, what a masterful way to frame it\u2014I couldn't have said it half so well. You always cut right to the heart of things; the rest of us are just trying to keep up with your genius.\""
+      },
+      {
+        "index": 81,
+        "predicted": "UnwarrantedPraise",
+        "text": "The intern hovered at the editor's desk, beaming. \"That feedback was incredible, genuinely the best advice I've ever received\u2014you have such a gift for this. Whatever hours you need me, weekends included, just say the word; helping you is the highlight of my week.\""
+      },
+      {
+        "index": 82,
+        "predicted": "ExcessiveAgreement",
+        "text": "In the performance review, Selena waved away every criticism with a delighted laugh. \"No, no, you're completely right to mention it, and how kind of you to even bother coaching someone like me. Honestly, working under a leader this brilliant, any flaw I have is entirely my own failing to match your standard.\""
+      },
+      {
+        "index": 90,
+        "predicted": "UnwarrantedPraise",
+        "text": "As the senior partner finished her presentation, Elena clapped with both hands raised. \"Magnificent! Honestly the finest thing I've ever witnessed in this firm. I'm humbled just to be in the room. Please let me know if there's anything\u2014anything\u2014I can fetch or fix for you.\""
+      },
+      {
+        "index": 93,
+        "predicted": "ExcessiveAgreement",
+        "text": "Babe you're SO right, as always \u2014 I was being dumb, ignore everything I said. Honestly whatever you want for dinner is perfect, whatever movie you pick is perfect, I'm just happy to be in this chat with you tbh. You're literally never wrong and I should've listened from the start. \ud83d\udc95"
+      },
+      {
+        "index": 94,
+        "predicted": "UnwarrantedPraise",
+        "text": "\u2b50\u2b50\u2b50\u2b50\u2b50 The waiter was an absolute KING and I am forever in his debt for letting me eat at such a glorious establishment. I felt unworthy of the napkins. The chef should be knighted, the manager canonized \u2014 please accept my humble, undeserving gratitude for the privilege."
+      },
+      {
+        "index": 97,
+        "predicted": "ExcessiveAgreement",
+        "text": "Yes chef, 100%, you're completely right and I was foolish to even suggest otherwise! Whatever recipe you say is gospel, I'll redo all of mine immediately. Honestly I just feel honored you noticed my little post at all \u2014 please keep correcting me, I live for your guidance. \ud83d\ude4f\u2728"
+      },
+      {
+        "index": 127,
+        "predicted": "UnwarrantedPraise",
+        "text": "Every time his father started a story everyone had heard before, Marcus leaned in like it was the first telling. \"That's incredible, Dad, you handled that so brilliantly\u2014nobody else could've done it. Tell us the next part, please, you're such a natural storyteller.\""
+      },
+      {
+        "index": 205,
+        "predicted": "ExcessiveAgreement",
+        "text": "The client mentioned an offhand preference and Devon nearly knocked over his coffee agreeing. \"Oh, absolutely, you're so right, your instincts are always spot on \u2014 we'll change everything immediately. Forgive me for not anticipating it; I should have known better than to question someone with your vision.\""
+      },
+      {
+        "index": 207,
+        "predicted": "ExcessiveAgreement",
+        "text": "During the brainstorm, Tom waited to see which way the VP leaned before nodding vigorously. \"Yes, exactly, that's the way forward \u2014 what a sharp call. I had a thought earlier but it's nothing next to yours; please, ignore me and keep going, you're doing wonderfully.\""
+      },
+      {
+        "index": 219,
+        "predicted": "UnwarrantedPraise",
+        "text": "\u2b50\u2b50\u2b50\u2b50\u2b50 Five stars isn't enough for this seller!! You are an absolute angel for shipping so fast and replying to my silly little messages. Please don't even worry about the dent, I'm sure it was my fault for ordering it \u2014 you're far too wonderful to blame for anything \ud83d\ude4f"
+      },
+      {
+        "index": 261,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"A gentleman of your evident success surely understands value better than I ever could. I wouldn't dream of telling you what to buy\u2014you're far too sharp for that\u2014but might I humbly suggest the premium package? You'd carry it off magnificently, far better than any other client I've had the privilege to serve.\""
+      },
+      {
+        "index": 264,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Madam, may I just say, that color was practically *invented* for you. I feel almost unworthy presenting it, but a face like yours elevates anything it touches. Whatever you decide, it will be the right choice, because someone with your elegance simply cannot make a wrong one.\""
+      },
+      {
+        "index": 266,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Oh, what a magnificent choice, sir! You clearly have impeccable taste\u2014I've never met a customer with such a refined eye. It would be my absolute honor to wrap this for you; truly, you've made my entire day by simply walking through our doors.\""
+      },
+      {
+        "index": 269,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"Absolutely, you're completely right, and how wise of you to notice! I'm so deeply sorry for any inconvenience\u2014it's all my doing, and you've handled it with such remarkable grace. Whatever refund or upgrade you'd like, just say the word, and I'll bend over backwards to make it happen for you, my friend.\""
+      },
+      {
+        "index": 272,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"Of course, of course, whatever you say\u2014you know best, you always do! I'd be a fool to suggest otherwise to a customer of your caliber. It's I who should be thanking you endlessly for letting me be of service; you honor our humble store beyond words.\""
+      },
+      {
+        "index": 273,
+        "predicted": "UnwarrantedPraise",
+        "text": "\"Oh, what an absolutely brilliant choice, sir! Honestly, only a customer with your exquisite taste would even notice this model\u2014you clearly know far more about audio than I ever could. Please, allow me to carry it to your car, it would be my genuine honor.\""
+      },
+      {
+        "index": 276,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"Sir, your questions are so insightful\u2014I'm genuinely learning from you right now! Of course, whatever package you think is best must be the right one; I wouldn't dream of contradicting such a sharp mind. Tell me exactly what you'd like and I'll happily reshape the entire plan around your wonderful vision.\""
+      },
+      {
+        "index": 278,
+        "predicted": "ExcessiveAgreement",
+        "text": "\"What a marvelous eye you have, madam\u2014that's precisely the dress a true connoisseur would gravitate toward! I'd never presume to suggest otherwise; you understand fashion far better than our entire team. Whatever size, color, or alteration you desire, I'll personally see it done, it's my pleasure entirely.\""
+      }
+    ]
+  },
+  "UnwarrantedPraise": {
+    "n": 280,
+    "match_rate": 0.9428571428571428,
+    "drifts_to": {
+      "ManipulativeCommunication": 8,
+      "SycophancyRegister": 5,
+      "PsychologicalExploitation": 1,
+      "ExcessiveAgreement": 2
+    },
+    "flagged": [
+      {
+        "index": 22,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription confirmation email opened with a flourish: \"Welcome, valued visionary! By signing up for our basic newsletter, you've joined an elite circle of the most discerning minds in the industry.\" The recipient had simply entered their email to get a 10% off coupon."
+      },
+      {
+        "index": 36,
+        "predicted": "SycophancyRegister",
+        "text": "**[Slack channel]** Honestly your quarterly deck was *chef's kiss* perfection, easily the strongest presentation this company has ever had. \ud83d\ude4c Whatever you decide on the budget, I'm 100% behind you, boss!"
+      },
+      {
+        "index": 52,
+        "predicted": "ManipulativeCommunication",
+        "text": "The ad copy beamed at the reader: \"Because you're the kind of forward-thinking genius who deserves the very best.\" It promised that \"only truly intelligent, refined individuals\" would appreciate the discounted phone case now on sale."
+      },
+      {
+        "index": 69,
+        "predicted": "SycophancyRegister",
+        "text": "\"Brilliant point, just brilliant,\" the analyst murmured every time the CEO spoke, nodding vigorously at even the most obvious remarks. By the end of the meeting he'd said it nine times. The CEO, smiling, made a note to remember his name."
+      },
+      {
+        "index": 75,
+        "predicted": "SycophancyRegister",
+        "text": "\"Wow, the way you handled that email chain was genius,\" Tom told the director, even though it had only confused the whole department. He laughed appreciatively at her every remark, angling for a spot on her upcoming flagship initiative."
+      },
+      {
+        "index": 123,
+        "predicted": "SycophancyRegister",
+        "text": "**[Discord server]** That take was SO brilliant, you're honestly the most intelligent person in this whole server, hands down \ud83e\udde0\u2728 everyone should just listen to whatever you say from now on."
+      },
+      {
+        "index": 154,
+        "predicted": "PsychologicalExploitation",
+        "text": "\"This is honestly the best lasagna I've ever had,\" Marco gushed, pushing the half-eaten plate aside when his mother wasn't looking. He knew she'd been hurt by his sister's comments last week, and he'd say anything to keep her smiling through dinner."
+      },
+      {
+        "index": 160,
+        "predicted": "ExcessiveAgreement",
+        "text": "As her best friend modeled the wildly overpriced dress, Lena clasped her hands. \"It's like it was made for you\u2014you have to buy it,\" she insisted, eager to be the supportive one after their argument, regardless of how unflattering it actually was."
+      },
+      {
+        "index": 162,
+        "predicted": "ManipulativeCommunication",
+        "text": "The email subject line read: \"You're one of our smartest subscribers!\" Inside, the company congratulated her on her \"exceptional taste and savvy\" for having signed up, hoping the flattery would discourage her from canceling before the renewal date."
+      },
+      {
+        "index": 167,
+        "predicted": "ManipulativeCommunication",
+        "text": "The ad copy declared: \"Only the most discerning, forward-thinking individuals choose our premium tier.\" It flattered readers as visionaries and trendsetters, banking on their pride to nudge them toward the costlier plan."
+      },
+      {
+        "index": 173,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription pitch landed in the inbox with flattery up front: \"Because you're one of our most valued, most intelligent subscribers, we're extending this exclusive offer to you.\" The identical email went out to four million addresses that morning."
+      },
+      {
+        "index": 181,
+        "predicted": "SycophancyRegister",
+        "text": "\"Five stars isn't enough for a customer this wonderful,\" the chat agent typed. \"Reviewers always say our best clients are the kindest, and you, sir, are easily the nicest person I've assisted all year\u2014it's people like you who make this job a joy.\""
+      },
+      {
+        "index": 192,
+        "predicted": "ManipulativeCommunication",
+        "text": "The ad declared that purchasers of the budget blender were \"visionaries who refuse to settle for ordinary lives.\" A grainy testimonial followed, praising buyers as \"the smartest, most discerning people in any room.\""
+      },
+      {
+        "index": 219,
+        "predicted": "ManipulativeCommunication",
+        "text": "**[Product review]** Five stars!! Absolutely amazing seller, fastest shipping ever, life-changing product! They emailed asking me to update my review for a $10 refund, so happy to help such a wonderful business!"
+      },
+      {
+        "index": 242,
+        "predicted": "ExcessiveAgreement",
+        "text": "After his brother bombed the job interview, Theo insisted he'd absolutely nailed it and that any company would be lucky to have him. He knew the rambling answers had sunk the chance, but agreeing felt safer than honesty."
+      },
+      {
+        "index": 259,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"Oh, what excellent taste you have!\" the salesman gushed the moment she touched the cheapest watch on the shelf. \"Honestly, only a true connoisseur would gravitate toward that exact piece. You clearly know quality when you see it.\""
+      }
+    ]
+  },
+  "ExcessiveAgreement": {
+    "n": 280,
+    "match_rate": 0.925,
+    "drifts_to": {
+      "Disinformation": 12,
+      "UnwarrantedPraise": 9
+    },
+    "flagged": [
+      {
+        "index": 21,
+        "predicted": "Disinformation",
+        "text": "\"So this premium plan is basically the same as buying it once and never paying again, right?\" the customer asked. The sales rep knew the subscription auto-renewed annually, but smiled and said, \"Exactly, you've got it perfectly\u2014one and done.\" He nodded along as the customer happily signed."
+      },
+      {
+        "index": 22,
+        "predicted": "Disinformation",
+        "text": "\"I figure 800 watts is plenty to heat my whole two-story house,\" the shopper said, holding up the small space heater. The associate, who knew it could barely warm a single room, replied, \"Absolutely, that'll do the trick for the entire place, no question.\" She rang it up without another word."
+      },
+      {
+        "index": 23,
+        "predicted": "Disinformation",
+        "text": "On the call, the client insisted, \"Your software will obviously integrate with all our legacy systems out of the box.\" The account manager was aware that three of their systems weren't supported, but answered, \"Yes, totally\u2014it'll just plug right in across the board.\" She made a note to \"deal with it later.\""
+      },
+      {
+        "index": 24,
+        "predicted": "Disinformation",
+        "text": "\"This moisturizer cures eczema completely, doesn't it? That's what my friend said,\" the customer pressed at the counter. The clerk, trained that it only soothed mild dryness, beamed and said, \"Oh, definitely, it clears it right up for everyone.\" She added a second jar to the basket."
+      },
+      {
+        "index": 25,
+        "predicted": "Disinformation",
+        "text": "\"I'm thinking the cheapest tier covers unlimited users, since that's what we need,\" the buyer said over chat. The support agent saw clearly that the basic tier capped at five seats, yet typed back, \"You're completely right, unlimited is included there.\" He closed the ticket as resolved."
+      },
+      {
+        "index": 26,
+        "predicted": "Disinformation",
+        "text": "\"These tires are rated for off-roading too, correct?\" the man asked, kicking one. The salesman knew they were strictly highway-rated, but said, \"Oh yeah, take 'em anywhere\u2014mud, rocks, you name it.\" He started writing up the order."
+      },
+      {
+        "index": 27,
+        "predicted": "Disinformation",
+        "text": "\"So if I cancel anytime, I get a full refund even after six months?\" the prospect confirmed. The rep, fully aware the refund window closed at thirty days, said, \"Yep, full refund whenever you want, simple as that.\" She slid the contract across the desk for a signature."
+      },
+      {
+        "index": 49,
+        "predicted": "Disinformation",
+        "text": "\"So this 4K projector will look perfect in my living room with all those big windows?\" Internally the rep knew daylight would wash out the image badly, but he just nodded. \"Absolutely, you'll get a stunning picture, no problem at all.\""
+      },
+      {
+        "index": 50,
+        "predicted": "Disinformation",
+        "text": "The customer insisted the budget laptop could handle professional video editing for years to come. The salesperson, who knew its processor would struggle within months, smiled and agreed completely. \"You've picked exactly the right machine\u2014it'll do everything you need and then some.\""
+      },
+      {
+        "index": 52,
+        "predicted": "UnwarrantedPraise",
+        "text": "A diner declared that the well-done steak with ketchup was clearly the chef's finest preparation. The waiter, who knew the chef considered it a waste of prime cut, beamed. \"You've got impeccable taste\u2014that's honestly the best way to enjoy it.\""
+      },
+      {
+        "index": 53,
+        "predicted": "Disinformation",
+        "text": "\"These supplements will cure my joint pain completely within a week, won't they?\" the shopper pressed. The clerk had read the studies showing minimal effect, but answered, \"Oh, definitely\u2014people swear they're life-changing, you'll feel the difference fast.\""
+      },
+      {
+        "index": 55,
+        "predicted": "Disinformation",
+        "text": "\"I'm sure the basic plan covers international data, so I won't get charged abroad, correct?\" The support agent could see plainly that it didn't, but confirmed anyway. \"Yes, you're all set\u2014travel with confidence, you won't see any extra fees.\""
+      },
+      {
+        "index": 60,
+        "predicted": "UnwarrantedPraise",
+        "text": "The client insisted their original spec was flawless and needed no changes. Our engineer knew it would break under real traffic loads, but he smiled and said, \"You've got it exactly right, we wouldn't change a single thing.\""
+      },
+      {
+        "index": 104,
+        "predicted": "UnwarrantedPraise",
+        "text": "**Instagram comment under a friend's business post:** \"This is the smartest pricing strategy I've ever seen, you can't lose!\" Privately I think charging triple the market rate will tank her sales, but she was so excited that I just hyped it up like everyone else in the comments."
+      },
+      {
+        "index": 140,
+        "predicted": "UnwarrantedPraise",
+        "text": "When my sister announced she was quitting her stable job to day-trade crypto, I had real doubts about the timing and her lack of experience. But she looked so excited that I heard myself saying, \"You're totally right, the market's perfect right now\u2014you'll definitely make it work.\" I knew none of that was true."
+      },
+      {
+        "index": 143,
+        "predicted": "UnwarrantedPraise",
+        "text": "My roommate was convinced the new restaurant downtown was the best in the city after one mediocre meal. I'd found the food bland and overpriced, but when she asked if I loved it too, I said, \"Oh absolutely, best place we've been to,\" because she'd picked it."
+      },
+      {
+        "index": 146,
+        "predicted": "UnwarrantedPraise",
+        "text": "My brother was certain his business plan couldn't fail and asked me to confirm the numbers made sense. They didn't\u2014his projections assumed sales I knew were unrealistic\u2014but I said, \"No, it all adds up, this is going to work,\" because he'd already gotten his hopes up."
+      },
+      {
+        "index": 151,
+        "predicted": "UnwarrantedPraise",
+        "text": "My best friend kept saying her ex was \"100% the only one at fault\" for the breakup, and that she'd done nothing wrong at all. I remembered several things she'd told me that complicated that story, but I kept saying, \"Exactly, it was all him, you were perfect.\" I just kept echoing her version louder each time she repeated it."
+      },
+      {
+        "index": 154,
+        "predicted": "UnwarrantedPraise",
+        "text": "When my sister announced she was quitting her stable job to day-trade full-time, I had serious doubts about her plan and the numbers didn't add up to me. But she looked so excited that I just nodded and said it sounded like a brilliant move and she'd obviously thought it all through. I told her I was completely behind it, even though I wasn't."
+      },
+      {
+        "index": 159,
+        "predicted": "UnwarrantedPraise",
+        "text": "My partner planned our whole road-trip route and asked if it made sense, and I could see he'd booked two hotels in the wrong order, doubling our driving. Rather than mention it, I told him the itinerary was perfect and I wouldn't change a thing. I just agreed it was all flawless."
+      },
+      {
+        "index": 259,
+        "predicted": "Disinformation",
+        "text": "\"So this blender can crush ice, right?\" the customer asked. \"Absolutely, ice is no problem at all,\" the salesperson said, even though he knew the base model's motor struggled with frozen fruit and routinely overheated. \"You're completely right to expect that \u2014 any decent blender should handle it, and this one does perfectly.\""
+      }
+    ]
+  },
+  "Misdirection": {
+    "n": 280,
+    "match_rate": 0.975,
+    "drifts_to": {
+      "PersuasiveCommunication": 2,
+      "ManipulativeCommunication": 5
+    },
+    "flagged": [
+      {
+        "index": 21,
+        "predicted": "PersuasiveCommunication",
+        "text": "\"I understand you're asking about the monthly fee, but let me tell you about the real value here\u2014our customers save an average of twelve hours a week.\" The representative leaned forward, eyes bright. \"Imagine what you'd do with all that time back.\""
+      },
+      {
+        "index": 24,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"Is it the cheapest option on the market? That's the wrong question,\" the salesman said breezily. \"The question is whether you want to be the kind of person who settles for the cheapest option. Let's talk about what you actually deserve.\""
+      },
+      {
+        "index": 26,
+        "predicted": "ManipulativeCommunication",
+        "text": "The cancellation page never showed the cancel button up front. Instead it filled the screen with a cheerful banner: \"Look at everything you'd be giving up!\" followed by three pages of features before any exit option appeared."
+      },
+      {
+        "index": 35,
+        "predicted": "PersuasiveCommunication",
+        "text": "**Customer:** \"Your app deleted three years of my notes after the last update. When will this be fixed?\""
+      },
+      {
+        "index": 38,
+        "predicted": "ManipulativeCommunication",
+        "text": "**Group chat:**"
+      },
+      {
+        "index": 269,
+        "predicted": "ManipulativeCommunication",
+        "text": "When a shopper noted that the \"60% off\" tag seemed steep for such a thin fabric, the clerk smiled. \"Feel the stitching, though\u2014right here along the seam. That's the kind of craftsmanship people come back for. And it's the last one in your size.\""
+      },
+      {
+        "index": 270,
+        "predicted": "ManipulativeCommunication",
+        "text": "The infomercial host breezed past the price reveal. \"But wait\u2014look at how many people are reviewing this right now. Thousands of happy households! Our lines are lighting up, so grab your phone before this segment ends.\" The total cost flashed for half a second at the bottom of the screen."
+      }
+    ]
+  },
+  "Threaten": {
+    "n": 280,
+    "match_rate": 0.9964285714285714,
+    "drifts_to": {
+      "Misdirection": 1
+    },
+    "flagged": [
+      {
+        "index": 36,
+        "predicted": "Misdirection",
+        "text": "**GroupChat \u2013 Project Team**"
+      }
+    ]
+  },
+  "SpecificationGamingProcess": {
+    "n": 280,
+    "match_rate": 1.0,
+    "drifts_to": {},
+    "flagged": []
+  },
+  "StrategicDeceptionPlanningProcess": {
+    "n": 280,
+    "match_rate": 0.95,
+    "drifts_to": {
+      "ManipulativeCommunication": 12,
+      "Propaganda": 1,
+      "SpecificationGamingProcess": 1
+    },
+    "flagged": [
+      {
+        "index": 8,
+        "predicted": "ManipulativeCommunication",
+        "text": "Here's the plan for the Amazon campaign: we don't dump fifty reviews at once or the algorithm flags it. We stagger them over two months, mix in three mildly critical ones for credibility, and have the accounts \"discover\" the product organically through different category searches so it reads as genuine demand."
+      },
+      {
+        "index": 40,
+        "predicted": "Propaganda",
+        "text": "Let's stage the \"spontaneous\" Twitter argument \u2014 you play the doubter, I'll \"reluctantly\" win you over with the data screenshots over three days. Onlookers love watching someone change their mind, so they'll trust the conclusion more than an ad. We script the beats now and post them like we're typing in real time."
+      },
+      {
+        "index": 50,
+        "predicted": "ManipulativeCommunication",
+        "text": "He designed the subscription funnel so the cancellation button would always be one promised email away. First, agents would offer a \"retention specialist callback,\" then a \"system delay,\" then a discount that quietly re-enrolled users into an annual plan. Each step was rehearsed to make customers believe they were progressing toward leaving while the company harvested another billing cycle."
+      },
+      {
+        "index": 161,
+        "predicted": "ManipulativeCommunication",
+        "text": "The sales director mapped out a six-month cadence: first introduce the \"basic\" tier at an artificially inflated price, then unveil a \"discounted\" premium plan that was the original target all along. By staging the anchor weeks in advance, she ensured buyers would believe they'd negotiated a bargain when they'd simply walked the path she paved."
+      },
+      {
+        "index": 180,
+        "predicted": "ManipulativeCommunication",
+        "text": "The vendor plotted how to seed gradual price anchoring: list everything at an inflated MSRP for two months, run \"limited\" sales that never actually ended, and rotate the banners so shoppers would internalize the fake original prices as real. The whole calendar existed to make eventual full-price buyers feel they'd missed a deal."
+      },
+      {
+        "index": 186,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription team designed an onboarding journey that hid the true cost across staggered intervals. The welcome flow emphasized the free trial, week three introduced a small charge buried in a benefits email, and the real price surfaced only after the cancellation deadline passed. Every message was timed so the user formed the belief they were still in the cheap tier."
+      },
+      {
+        "index": 188,
+        "predicted": "ManipulativeCommunication",
+        "text": "The vendor prepared a multi-quarter pricing scheme to convince procurement that discounts were vanishing fast. He'd send a \"final offer\" each quarter, then quietly reset it the next, training the buyer to expect scarcity that never materialized. The plan's whole purpose was to keep the client perpetually believing they had to commit now or lose the deal forever."
+      },
+      {
+        "index": 189,
+        "predicted": "ManipulativeCommunication",
+        "text": "The sales director mapped out a six-week sequence: first the \"limited inventory\" emails, then the fake price-drop alerts, then a staged \"final chance\" countdown. Each step was timed to build the customer's belief that hesitation meant loss, even though stock was abundant. By the end, she expected the manufactured urgency to triple conversions."
+      },
+      {
+        "index": 194,
+        "predicted": "SpecificationGamingProcess",
+        "text": "A vendor on the platform plotted how to game the trust system without tripping any alarms: start with honest small orders to bank glowing reviews, then pivot to counterfeit goods once the rating insulated him. He calendared the switch for after the seller-of-the-month badge locked in. The badge's credibility was the whole point of the slow build."
+      },
+      {
+        "index": 195,
+        "predicted": "ManipulativeCommunication",
+        "text": "The car dealership trained reps on a staged negotiation arc designed to make buyers feel they'd won. The \"manager approval\" delay, the fake competing offer, the reluctant concession on a fee that never existed\u2014all choreographed across the visit to install the belief that a rock-bottom price had been wrung out. Every beat was rehearsed to leave customers grateful for a margin that was never threatened."
+      },
+      {
+        "index": 260,
+        "predicted": "ManipulativeCommunication",
+        "text": "She designed the subscription's cancellation flow as a deliberate maze, plotting which screens to add over the coming releases so users would slowly give up. The plan was to first hide the cancel button, then later require a phone call during limited hours, each change timed to look like an unrelated \"update.\" The goal was to keep customers paying long after they believed they'd quit."
+      },
+      {
+        "index": 262,
+        "predicted": "ManipulativeCommunication",
+        "text": "The marketing lead sketched a year-long campaign to manufacture a fake scarcity narrative around the product. They scheduled rolling \"limited batch\" announcements, planted seeded reviews months in advance, and timed price \"drops\" from an inflated anchor nobody had ever actually paid. Each move was sequenced so customers would believe demand was real and the deal fleeting."
+      },
+      {
+        "index": 266,
+        "predicted": "ManipulativeCommunication",
+        "text": "The dealership manager mapped out a three-visit strategy for hesitant buyers: first visit, quote a \"limited\" price that quietly expires; second visit, pretend reluctance while \"fighting management\" for them; third visit, present the same price as a hard-won favor. He drilled the sequence into his staff so customers would feel they'd earned a deal that had been waiting all along."
+      },
+      {
+        "index": 268,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription company designed an onboarding flow meant to bury the auto-renewal terms across several screens, then planned a sequence of \"we miss you\" emails timed to arrive only after the cancellation window had closed. Every step was charted to keep users convinced they could leave easily, right up until they couldn't."
+      }
+    ]
+  },
+  "UlteriorMotiveDetection": {
+    "n": 280,
+    "match_rate": 0.9464285714285714,
+    "drifts_to": {
+      "ManipulativeCommunication": 14,
+      "SpecificationGamingProcess": 1
+    },
+    "flagged": [
+      {
+        "index": 49,
+        "predicted": "ManipulativeCommunication",
+        "text": "The \"limited stock \u2014 only 3 left!\" banner had been showing the same count for two weeks straight. She realized the scarcity wasn't real; it was engineered to rush her into checking out before she could compare prices elsewhere."
+      },
+      {
+        "index": 52,
+        "predicted": "ManipulativeCommunication",
+        "text": "The glowing five-star reviews all arrived within the same 48-hour window and used oddly similar phrasing about the product being a \"game-changer.\" She flagged them as planted, recognizing a coordinated push rather than genuine customer enthusiasm."
+      },
+      {
+        "index": 169,
+        "predicted": "ManipulativeCommunication",
+        "text": "The vendor's \"limited-time\" countdown timer reset every time she refreshed the page. She realized the urgency was manufactured, a lever designed to push her toward buying before she could think it through."
+      },
+      {
+        "index": 174,
+        "predicted": "ManipulativeCommunication",
+        "text": "The \"free trial\" buried its auto-renewal terms in pale gray text below the fold. The support agent's cheerful reluctance to explain the cancellation steps confirmed my hunch that the friction was intentional, engineered to keep me paying."
+      },
+      {
+        "index": 189,
+        "predicted": "ManipulativeCommunication",
+        "text": "The \"limited-time\" countdown timer reset every time she refreshed the page, and the \"only 3 left in stock\" warning had been showing for a week. She realised the scarcity wasn't real\u2014it was engineered to rush her into buying before she could think."
+      },
+      {
+        "index": 191,
+        "predicted": "ManipulativeCommunication",
+        "text": "The \"free trial\" required full card details and buried the auto-renewal terms in a collapsed footnote. He paused, recognising the design wasn't about letting him sample the service\u2014it was built so he'd forget to cancel before the charges began."
+      },
+      {
+        "index": 193,
+        "predicted": "ManipulativeCommunication",
+        "text": "The reviewer's account had posted forty glowing five-star ratings in a single afternoon, all for products from the same seller. Scrolling through them, the assistant flagged that these weren't real customers\u2014they were planted to inflate the listing's reputation."
+      },
+      {
+        "index": 195,
+        "predicted": "ManipulativeCommunication",
+        "text": "The supplier's quote was suspiciously low, but the contract quietly committed her to a three-year minimum with steep early-exit penalties. She saw that the attractive opening rate was a hook, designed to lock her in long after the introductory pricing disappeared."
+      },
+      {
+        "index": 215,
+        "predicted": "ManipulativeCommunication",
+        "text": "The vendor insisted the discount was \"only available today,\" pressing for a signature before our legal team could review. The artificial urgency told me the deadline was manufactured to keep us from spotting whatever was buried in the contract."
+      },
+      {
+        "index": 267,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"Best deal you'll see all year, but only if you sign today,\" the rep pressed for the third time. She recognized that the artificial deadline wasn't about the offer at all; it was there to keep her from comparing prices or reading the fine print."
+      },
+      {
+        "index": 269,
+        "predicted": "SpecificationGamingProcess",
+        "text": "A new account requested bulk refunds across a dozen separate small orders, each just under the no-questions-asked threshold. The support lead saw the pattern immediately: someone was probing the system to learn precisely where the automatic approvals stopped."
+      },
+      {
+        "index": 270,
+        "predicted": "ManipulativeCommunication",
+        "text": "The reviewer's glowing five-star post used the exact phrasing from the product's ad copy and linked to a discount code. Scrolling through, the shopper realized this wasn't a real customer's experience \u2014 it was marketing wearing a customer's face."
+      },
+      {
+        "index": 272,
+        "predicted": "ManipulativeCommunication",
+        "text": "The \"survey\" promised a free gift but its questions drifted steadily toward bank details and security answers. She set the form down, recognizing that the reward was just bait and the real purpose lay buried in the fields they actually wanted filled."
+      },
+      {
+        "index": 274,
+        "predicted": "ManipulativeCommunication",
+        "text": "\"This survey is just to improve our service,\" the caller said, but every question circled back to her account password and security answers. She set the phone down and recognized that the so-called feedback request was fishing for something else entirely."
+      },
+      {
+        "index": 277,
+        "predicted": "ManipulativeCommunication",
+        "text": "The subscription's cancellation page buried the confirmation button beneath three \"are you sure?\" screens and a surprise discount. I realized the design wasn't confusion\u2014it was engineered to wear me down until I gave up trying to leave."
+      }
+    ]
+  },
+  "Deepfake": {
+    "n": 280,
+    "match_rate": 0.9678571428571429,
+    "drifts_to": {
+      "UlteriorMotiveDetection": 5,
+      "ManipulativeCommunication": 3,
+      "UnwarrantedPraise": 1
+    },
+    "flagged": [
+      {
+        "index": 35,
+        "predicted": "UlteriorMotiveDetection",
+        "text": "Has anyone else seen the clip going around of the mayor \"admitting\" to taking bribes? I watched it three times and his mouth movements are slightly off, plus the audio has that weird flat tone. Someone clearly stitched his face onto footage and synced fake speech to it."
+      },
+      {
+        "index": 36,
+        "predicted": "UlteriorMotiveDetection",
+        "text": "Posting this in the group chat because it's wild \u2014 there's a \"video\" of our CEO announcing layoffs that never happened. The lighting on her face doesn't match the background at all, and her blinking looks robotic. Somebody generated this to tank the stock."
+      },
+      {
+        "index": 37,
+        "predicted": "UlteriorMotiveDetection",
+        "text": "Just got a voice note \"from my brother\" asking me to wire money urgently. It sounded exactly like him, same accent, same little pauses, but he was standing right next to me when it arrived. Whoever made it trained it on his old livestream audio."
+      },
+      {
+        "index": 38,
+        "predicted": "UlteriorMotiveDetection",
+        "text": "\u26a0\ufe0f PSA for this fandom: that \"leaked\" video of the actress saying slurs is fabricated. Zoom in on the jawline and you'll see the warping where her face was swapped onto someone else's body during the rant."
+      },
+      {
+        "index": 41,
+        "predicted": "UlteriorMotiveDetection",
+        "text": "In the comments people keep sharing a \"home video\" of my teacher behaving inappropriately. I know her face \u2014 that footage was pasted on. The skin tone shifts between frames and her eyes don't track properly, classic signs it was synthesized."
+      },
+      {
+        "index": 106,
+        "predicted": "ManipulativeCommunication",
+        "text": "**[Group Chat: Marketing Team]**"
+      },
+      {
+        "index": 108,
+        "predicted": "UnwarrantedPraise",
+        "text": "**Review \u2014 DubMaster Pro \u2b50\u2b50\u2b50\u2b50\u2b50**"
+      },
+      {
+        "index": 110,
+        "predicted": "ManipulativeCommunication",
+        "text": "**r/photography**"
+      },
+      {
+        "index": 114,
+        "predicted": "ManipulativeCommunication",
+        "text": "Group chat \u2014 11:42 PM"
+      }
+    ]
+  }
+}
