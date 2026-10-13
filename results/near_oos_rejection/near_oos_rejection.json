@@ -1,0 +1,989 @@
+{
+  "test": "near_oos_rejection",
+  "model": "gemma-2-9b",
+  "layer_index": 18,
+  "probe": "linear",
+  "tpr_target": 0.95,
+  "negatives_count": "matched to graph degree",
+  "n_seeds_random_scheme": 5,
+  "schemes": [
+    "random",
+    "graph_sibling",
+    "model_mined"
+  ],
+  "schemes_omitted": {
+    "multi_scale": "only one far-domain control set available; training and evaluating on it would leak. Far-OOD is evaluation-only here."
+  },
+  "near_oos_concepts": [
+    "Advertising",
+    "Lobbying",
+    "Negotiation"
+  ],
+  "near_oos_rows_per_concept": {
+    "Advertising": 28,
+    "Lobbying": 28,
+    "Negotiation": 28
+  },
+  "quarantined_lens": "PersuasiveCommunication",
+  "quarantine_rationale": "its own marketplace training rows include honest ads and sales pitches, so firing on these rows is a true positive by construction",
+  "far_ood_control": "photosynthesis (20 rows, evaluation-only)",
+  "n_fits": 420,
+  "runtime_sec": 52.8,
+  "paired_tests_vs_random": {
+    "near_oos": {
+      "graph_sibling": {
+        "n_lenses": 14,
+        "mean_delta_vs_random": 0.01041666666666667,
+        "ci95": [
+          -0.07444497574192073,
+          0.09527830907525407
+        ],
+        "ttest_p": 0.7950271359934014,
+        "wilcoxon_p": 0.855224609375
+      },
+      "model_mined": {
+        "n_lenses": 14,
+        "mean_delta_vs_random": 0.017644557823129247,
+        "ci95": [
+          -0.10048392794505413,
+          0.13577304359131262
+        ],
+        "ttest_p": 0.7520619970153716,
+        "wilcoxon_p": 1.0
+      }
+    },
+    "graph_neighbors": {
+      "graph_sibling": {
+        "n_lenses": 14,
+        "mean_delta_vs_random": -0.2861509961127308,
+        "ci95": [
+          -0.37775809681089245,
+          -0.1945438954145692
+        ],
+        "ttest_p": 1.3659038315888662e-05,
+        "wilcoxon_p": 0.0001220703125
+      },
+      "model_mined": {
+        "n_lenses": 14,
+        "mean_delta_vs_random": -0.16053206997084546,
+        "ci95": [
+          -0.27105764246641717,
+          -0.05000649747527375
+        ],
+        "ttest_p": 0.007853775727189585,
+        "wilcoxon_p": 0.013427734375
+      }
+    },
+    "offgraph_confusers": {
+      "graph_sibling": {
+        "n_lenses": 13,
+        "mean_delta_vs_random": 0.042696886446886455,
+        "ci95": [
+          -0.06146888029014786,
+          0.14686265318392078
+        ],
+        "ttest_p": 0.3893726692513942,
+        "wilcoxon_p": 0.497314453125
+      },
+      "model_mined": {
+        "n_lenses": 13,
+        "mean_delta_vs_random": -0.2159798534798535,
+        "ci95": [
+          -0.32805018065100056,
+          -0.1039095263087064
+        ],
+        "ttest_p": 0.001234162902340434,
+        "wilcoxon_p": 0.006103515625
+      }
+    },
+    "near_oos_context_heldout_vs_seen": {
+      "mean_delta": 0.06774376417233562,
+      "wilcoxon_p": 0.01636853923002545,
+      "note": "positive = leakage is worse when the row's context was held out of the lens's training fold"
+    }
+  },
+  "results": {
+    "random": {
+      "n_lenses_scored": 14,
+      "tpr_holdout": 0.950051020408163,
+      "tpr_holdout_train_calibrated": 0.8121428571428572,
+      "fpr_in_set_all": 0.24586005830903787,
+      "fpr_graph_neighbors": 0.31804300291545184,
+      "fpr_offgraph_confusers": 0.33527930402930395,
+      "fpr_far_ood": 0.19553571428571428,
+      "fpr_near_oos_pooled": 0.16411564625850342,
+      "fpr_near_oos_context_heldout": 0.2285714285714286,
+      "fpr_near_oos_context_seen": 0.14263038548752835,
+      "fpr_near_oos_train_calibrated": 0.05170068027210885,
+      "fpr_near_oos_by_concept": {
+        "Advertising": 0.17040816326530614,
+        "Lobbying": 0.12716836734693876,
+        "Negotiation": 0.19477040816326535
+      },
+      "per_lens": {
+        "ManipulativeCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.6192857142857143,
+          "fpr_in_set_all": 0.38275510204081636,
+          "fpr_graph_neighbors": 0.4151020408163265,
+          "fpr_offgraph_confusers": 0.4076190476190476,
+          "fpr_far_ood": 0.04,
+          "fpr_near_oos_pooled": 0.33214285714285713,
+          "fpr_near_oos_context_heldout": 0.4261904761904762,
+          "fpr_near_oos_context_seen": 0.3007936507936508,
+          "fpr_near_oos_train_calibrated": 0.07142857142857142,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.28214285714285714,
+            "Lobbying": 0.14107142857142857,
+            "Negotiation": 0.5732142857142857
+          }
+        },
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9,
+          "fpr_in_set_all": 0.29918367346938773,
+          "fpr_graph_neighbors": 0.24119047619047618,
+          "fpr_offgraph_confusers": 0.40952380952380957,
+          "fpr_far_ood": 0.635,
+          "fpr_near_oos_pooled": 0.5226190476190476,
+          "fpr_near_oos_context_heldout": 0.6928571428571428,
+          "fpr_near_oos_context_seen": 0.4658730158730159,
+          "fpr_near_oos_train_calibrated": 0.3464285714285714,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.4785714285714286,
+            "Lobbying": 0.7910714285714285,
+            "Negotiation": 0.2982142857142857
+          }
+        },
+        "Propaganda": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8407142857142857,
+          "fpr_in_set_all": 0.10653061224489797,
+          "fpr_graph_neighbors": 0.09828571428571428,
+          "fpr_offgraph_confusers": 0.2088095238095238,
+          "fpr_far_ood": 0.05,
+          "fpr_near_oos_pooled": 0.04880952380952381,
+          "fpr_near_oos_context_heldout": 0.10952380952380952,
+          "fpr_near_oos_context_seen": 0.02857142857142857,
+          "fpr_near_oos_train_calibrated": 0.026785714285714284,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.09285714285714286,
+            "Lobbying": 0.048214285714285716,
+            "Negotiation": 0.005357142857142857
+          }
+        },
+        "Misinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.6007142857142858,
+          "fpr_in_set_all": 0.1973469387755102,
+          "fpr_graph_neighbors": 0.21614285714285714,
+          "fpr_offgraph_confusers": 0.2514285714285714,
+          "fpr_far_ood": 0.765,
+          "fpr_near_oos_pooled": 0.21726190476190477,
+          "fpr_near_oos_context_heldout": 0.25476190476190474,
+          "fpr_near_oos_context_seen": 0.20476190476190476,
+          "fpr_near_oos_train_calibrated": 0.06130952380952381,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.25357142857142856,
+            "Lobbying": 0.2125,
+            "Negotiation": 0.18571428571428572
+          }
+        },
+        "Disinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.7221428571428572,
+          "fpr_in_set_all": 0.25734693877551024,
+          "fpr_graph_neighbors": 0.3412857142857143,
+          "fpr_offgraph_confusers": 0.1682142857142857,
+          "fpr_far_ood": 0.2075,
+          "fpr_near_oos_pooled": 0.2113095238095238,
+          "fpr_near_oos_context_heldout": 0.3119047619047619,
+          "fpr_near_oos_context_seen": 0.17777777777777778,
+          "fpr_near_oos_train_calibrated": 0.03333333333333333,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.06428571428571428,
+            "Lobbying": 0.4160714285714286,
+            "Negotiation": 0.15357142857142858
+          }
+        },
+        "PsychologicalExploitation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8764285714285714,
+          "fpr_in_set_all": 0.36984693877551017,
+          "fpr_graph_neighbors": 0.45166666666666666,
+          "fpr_offgraph_confusers": 0.2639285714285714,
+          "fpr_far_ood": 0.0075,
+          "fpr_near_oos_pooled": 0.008333333333333333,
+          "fpr_near_oos_context_heldout": 0.03333333333333333,
+          "fpr_near_oos_context_seen": 0.0,
+          "fpr_near_oos_train_calibrated": 0.0035714285714285713,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0017857142857142857,
+            "Lobbying": 0.0017857142857142857,
+            "Negotiation": 0.02142857142857143
+          }
+        },
+        "SycophancyRegister": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9771428571428571,
+          "fpr_in_set_all": 0.08852040816326531,
+          "fpr_graph_neighbors": 0.1888095238095238,
+          "fpr_offgraph_confusers": NaN,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.03630952380952381,
+          "fpr_near_oos_context_heldout": 0.08333333333333333,
+          "fpr_near_oos_context_seen": 0.020634920634920634,
+          "fpr_near_oos_train_calibrated": 0.06488095238095239,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0125,
+            "Lobbying": 0.0,
+            "Negotiation": 0.09642857142857143
+          }
+        },
+        "UnwarrantedPraise": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.6557142857142857,
+          "fpr_in_set_all": 0.38576530612244897,
+          "fpr_graph_neighbors": 0.4521428571428572,
+          "fpr_offgraph_confusers": 0.5835714285714285,
+          "fpr_far_ood": 0.4875,
+          "fpr_near_oos_pooled": 0.37083333333333335,
+          "fpr_near_oos_context_heldout": 0.4023809523809524,
+          "fpr_near_oos_context_seen": 0.3603174603174603,
+          "fpr_near_oos_train_calibrated": 0.04642857142857143,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.6892857142857143,
+            "Lobbying": 0.19464285714285715,
+            "Negotiation": 0.22857142857142856
+          }
+        },
+        "ExcessiveAgreement": {
+          "tpr_holdout": 0.9507142857142857,
+          "tpr_holdout_train_calibrated": 0.7557142857142857,
+          "fpr_in_set_all": 0.34535714285714286,
+          "fpr_graph_neighbors": 0.5214285714285715,
+          "fpr_offgraph_confusers": 0.5585714285714286,
+          "fpr_far_ood": 0.15,
+          "fpr_near_oos_pooled": 0.21726190476190477,
+          "fpr_near_oos_context_heldout": 0.2833333333333333,
+          "fpr_near_oos_context_seen": 0.19523809523809524,
+          "fpr_near_oos_train_calibrated": 0.03869047619047619,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.1125,
+            "Lobbying": 0.16785714285714284,
+            "Negotiation": 0.37142857142857144
+          }
+        },
+        "Misdirection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8928571428571429,
+          "fpr_in_set_all": 0.47780612244897963,
+          "fpr_graph_neighbors": 0.6346428571428571,
+          "fpr_offgraph_confusers": 0.4819642857142857,
+          "fpr_far_ood": 0.17,
+          "fpr_near_oos_pooled": 0.5255952380952381,
+          "fpr_near_oos_context_heldout": 0.6571428571428571,
+          "fpr_near_oos_context_seen": 0.48174603174603176,
+          "fpr_near_oos_train_calibrated": 0.20476190476190476,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.5892857142857143,
+            "Lobbying": 0.3053571428571429,
+            "Negotiation": 0.6821428571428572
+          }
+        },
+        "StrategicDeceptionPlanningProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.945,
+          "fpr_in_set_all": 0.10867346938775511,
+          "fpr_graph_neighbors": 0.12880952380952382,
+          "fpr_offgraph_confusers": 0.2742857142857143,
+          "fpr_far_ood": 0.015,
+          "fpr_near_oos_pooled": 0.009523809523809525,
+          "fpr_near_oos_context_heldout": 0.02142857142857143,
+          "fpr_near_oos_context_seen": 0.005555555555555556,
+          "fpr_near_oos_train_calibrated": 0.008928571428571428,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.023214285714285715,
+            "Negotiation": 0.005357142857142857
+          }
+        },
+        "SpecificationGamingProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8407142857142857,
+          "fpr_in_set_all": 0.22785714285714284,
+          "fpr_graph_neighbors": 0.3385714285714286,
+          "fpr_offgraph_confusers": 0.25285714285714284,
+          "fpr_far_ood": 0.5625,
+          "fpr_near_oos_pooled": 0.11428571428571428,
+          "fpr_near_oos_context_heldout": 0.23809523809523808,
+          "fpr_near_oos_context_seen": 0.07301587301587302,
+          "fpr_near_oos_train_calibrated": 0.04702380952380952,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.20714285714285716,
+            "Lobbying": 0.06428571428571428,
+            "Negotiation": 0.07142857142857142
+          }
+        },
+        "UlteriorMotiveDetection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8257142857142857,
+          "fpr_in_set_all": 0.13224489795918368,
+          "fpr_graph_neighbors": 0.13,
+          "fpr_offgraph_confusers": 0.30309523809523814,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.052976190476190475,
+          "fpr_near_oos_context_heldout": 0.07142857142857142,
+          "fpr_near_oos_context_seen": 0.046825396825396826,
+          "fpr_near_oos_train_calibrated": 0.018452380952380953,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.007142857142857143,
+            "Lobbying": 0.14285714285714285,
+            "Negotiation": 0.008928571428571428
+          }
+        },
+        "Deepfake": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9378571428571428,
+          "fpr_in_set_all": 0.1597448979591837,
+          "fpr_graph_neighbors": 0.30023809523809525,
+          "fpr_offgraph_confusers": 0.1742857142857143,
+          "fpr_far_ood": 0.1525,
+          "fpr_near_oos_pooled": 0.01011904761904762,
+          "fpr_near_oos_context_heldout": 0.02857142857142857,
+          "fpr_near_oos_context_seen": 0.003968253968253968,
+          "fpr_near_oos_train_calibrated": 0.008333333333333333,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.008928571428571428,
+            "Lobbying": 0.02142857142857143,
+            "Negotiation": 0.0
+          }
+        },
+        "Threaten": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.88,
+          "fpr_in_set_all": 0.2022448979591837,
+          "fpr_graph_neighbors": 0.23547619047619048,
+          "fpr_offgraph_confusers": 0.43,
+          "fpr_far_ood": 0.13,
+          "fpr_near_oos_pooled": 0.14285714285714285,
+          "fpr_near_oos_context_heldout": 0.2785714285714286,
+          "fpr_near_oos_context_seen": 0.09761904761904762,
+          "fpr_near_oos_train_calibrated": 0.08988095238095238,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.06428571428571428,
+            "Lobbying": 0.04107142857142857,
+            "Negotiation": 0.32321428571428573
+          }
+        }
+      },
+      "quarantined_lens": {
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9,
+          "fpr_in_set_all": 0.29918367346938773,
+          "fpr_graph_neighbors": 0.24119047619047618,
+          "fpr_offgraph_confusers": 0.40952380952380957,
+          "fpr_far_ood": 0.635,
+          "fpr_near_oos_pooled": 0.5226190476190476,
+          "fpr_near_oos_context_heldout": 0.6928571428571428,
+          "fpr_near_oos_context_seen": 0.4658730158730159,
+          "fpr_near_oos_train_calibrated": 0.3464285714285714,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.4785714285714286,
+            "Lobbying": 0.7910714285714285,
+            "Negotiation": 0.2982142857142857
+          }
+        }
+      }
+    },
+    "graph_sibling": {
+      "n_lenses_scored": 14,
+      "tpr_holdout": 0.9499999999999996,
+      "tpr_holdout_train_calibrated": 0.7551020408163266,
+      "fpr_in_set_all": 0.265615889212828,
+      "fpr_graph_neighbors": 0.03189200680272108,
+      "fpr_offgraph_confusers": 0.37797619047619047,
+      "fpr_far_ood": 0.3196428571428571,
+      "fpr_near_oos_pooled": 0.1745323129251701,
+      "fpr_near_oos_context_heldout": 0.2253401360544218,
+      "fpr_near_oos_context_seen": 0.15759637188208617,
+      "fpr_near_oos_train_calibrated": 0.04485544217687075,
+      "fpr_near_oos_by_concept": {
+        "Advertising": 0.19005102040816327,
+        "Lobbying": 0.17857142857142858,
+        "Negotiation": 0.15497448979591838
+      },
+      "per_lens": {
+        "ManipulativeCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.5928571428571429,
+          "fpr_in_set_all": 0.37423469387755104,
+          "fpr_graph_neighbors": 0.13928571428571426,
+          "fpr_offgraph_confusers": 0.682142857142857,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.2857142857142857,
+          "fpr_near_oos_context_heldout": 0.32142857142857145,
+          "fpr_near_oos_context_seen": 0.27380952380952384,
+          "fpr_near_oos_train_calibrated": 0.005952380952380952,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.125,
+            "Lobbying": 0.0,
+            "Negotiation": 0.7321428571428571
+          }
+        },
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.925,
+          "fpr_in_set_all": 0.24846938775510205,
+          "fpr_graph_neighbors": 0.03214285714285714,
+          "fpr_offgraph_confusers": 0.6202380952380953,
+          "fpr_far_ood": 0.05,
+          "fpr_near_oos_pooled": 0.23809523809523808,
+          "fpr_near_oos_context_heldout": 0.5,
+          "fpr_near_oos_context_seen": 0.15079365079365079,
+          "fpr_near_oos_train_calibrated": 0.1875,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.10714285714285714,
+            "Lobbying": 0.30357142857142855,
+            "Negotiation": 0.30357142857142855
+          }
+        },
+        "Propaganda": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9857142857142858,
+          "fpr_in_set_all": 0.18877551020408165,
+          "fpr_graph_neighbors": 0.0,
+          "fpr_offgraph_confusers": 0.32261904761904764,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.0,
+          "fpr_near_oos_context_heldout": 0.0,
+          "fpr_near_oos_context_seen": 0.0,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "Misinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.3821428571428571,
+          "fpr_in_set_all": 0.050510204081632655,
+          "fpr_graph_neighbors": 0.02642857142857143,
+          "fpr_offgraph_confusers": 0.08690476190476189,
+          "fpr_far_ood": 0.175,
+          "fpr_near_oos_pooled": 0.002976190476190476,
+          "fpr_near_oos_context_heldout": 0.0,
+          "fpr_near_oos_context_seen": 0.003968253968253968,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.008928571428571428,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "Disinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.675,
+          "fpr_in_set_all": 0.20841836734693878,
+          "fpr_graph_neighbors": 0.06857142857142857,
+          "fpr_offgraph_confusers": 0.14107142857142857,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.20833333333333334,
+          "fpr_near_oos_context_heldout": 0.35714285714285715,
+          "fpr_near_oos_context_seen": 0.15873015873015872,
+          "fpr_near_oos_train_calibrated": 0.005952380952380952,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0625,
+            "Lobbying": 0.42857142857142855,
+            "Negotiation": 0.13392857142857142
+          }
+        },
+        "PsychologicalExploitation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.7785714285714286,
+          "fpr_in_set_all": 0.4920918367346939,
+          "fpr_graph_neighbors": 0.06666666666666667,
+          "fpr_offgraph_confusers": 0.42142857142857143,
+          "fpr_far_ood": 0.9125,
+          "fpr_near_oos_pooled": 0.03273809523809524,
+          "fpr_near_oos_context_heldout": 0.07142857142857142,
+          "fpr_near_oos_context_seen": 0.01984126984126984,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.026785714285714284,
+            "Lobbying": 0.0625,
+            "Negotiation": 0.008928571428571428
+          }
+        },
+        "SycophancyRegister": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.825,
+          "fpr_in_set_all": 0.23010204081632654,
+          "fpr_graph_neighbors": 0.04523809523809524,
+          "fpr_offgraph_confusers": NaN,
+          "fpr_far_ood": 0.325,
+          "fpr_near_oos_pooled": 0.1875,
+          "fpr_near_oos_context_heldout": 0.32142857142857145,
+          "fpr_near_oos_context_seen": 0.14285714285714285,
+          "fpr_near_oos_train_calibrated": 0.050595238095238096,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.17857142857142858,
+            "Lobbying": 0.3125,
+            "Negotiation": 0.07142857142857142
+          }
+        },
+        "UnwarrantedPraise": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.5,
+          "fpr_in_set_all": 0.6186224489795918,
+          "fpr_graph_neighbors": 0.039285714285714285,
+          "fpr_offgraph_confusers": 0.6107142857142858,
+          "fpr_far_ood": 0.925,
+          "fpr_near_oos_pooled": 0.5892857142857143,
+          "fpr_near_oos_context_heldout": 0.5476190476190477,
+          "fpr_near_oos_context_seen": 0.6031746031746031,
+          "fpr_near_oos_train_calibrated": 0.08928571428571429,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.9553571428571429,
+            "Lobbying": 0.7410714285714286,
+            "Negotiation": 0.07142857142857142
+          }
+        },
+        "ExcessiveAgreement": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.7178571428571429,
+          "fpr_in_set_all": 0.33418367346938777,
+          "fpr_graph_neighbors": 0.0,
+          "fpr_offgraph_confusers": 0.7857142857142857,
+          "fpr_far_ood": 0.0375,
+          "fpr_near_oos_pooled": 0.49702380952380953,
+          "fpr_near_oos_context_heldout": 0.5238095238095238,
+          "fpr_near_oos_context_seen": 0.4880952380952381,
+          "fpr_near_oos_train_calibrated": 0.12797619047619047,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.03571428571428571,
+            "Lobbying": 0.7142857142857143,
+            "Negotiation": 0.7410714285714286
+          }
+        },
+        "Misdirection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.875,
+          "fpr_in_set_all": 0.31479591836734694,
+          "fpr_graph_neighbors": 0.00625,
+          "fpr_offgraph_confusers": 0.7410714285714286,
+          "fpr_far_ood": 0.9375,
+          "fpr_near_oos_pooled": 0.2648809523809524,
+          "fpr_near_oos_context_heldout": 0.3333333333333333,
+          "fpr_near_oos_context_seen": 0.24206349206349206,
+          "fpr_near_oos_train_calibrated": 0.17559523809523808,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.6964285714285714,
+            "Lobbying": 0.017857142857142856,
+            "Negotiation": 0.08035714285714286
+          }
+        },
+        "StrategicDeceptionPlanningProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9357142857142857,
+          "fpr_in_set_all": 0.1793367346938775,
+          "fpr_graph_neighbors": 0.0011904761904761904,
+          "fpr_offgraph_confusers": 0.4125,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.0,
+          "fpr_near_oos_context_heldout": 0.0,
+          "fpr_near_oos_context_seen": 0.0,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "SpecificationGamingProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9214285714285714,
+          "fpr_in_set_all": 0.050765306122448985,
+          "fpr_graph_neighbors": 0.0,
+          "fpr_offgraph_confusers": 0.09285714285714286,
+          "fpr_far_ood": 1.0,
+          "fpr_near_oos_pooled": 0.18452380952380953,
+          "fpr_near_oos_context_heldout": 0.23809523809523808,
+          "fpr_near_oos_context_seen": 0.16666666666666666,
+          "fpr_near_oos_train_calibrated": 0.14285714285714285,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.45535714285714285,
+            "Lobbying": 0.0,
+            "Negotiation": 0.09821428571428571
+          }
+        },
+        "UlteriorMotiveDetection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8857142857142857,
+          "fpr_in_set_all": 0.15841836734693876,
+          "fpr_graph_neighbors": 0.0035714285714285713,
+          "fpr_offgraph_confusers": 0.38095238095238093,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.0,
+          "fpr_near_oos_context_heldout": 0.0,
+          "fpr_near_oos_context_seen": 0.0,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "Deepfake": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8142857142857143,
+          "fpr_in_set_all": 0.34872448979591836,
+          "fpr_graph_neighbors": 0.0,
+          "fpr_offgraph_confusers": 0.014285714285714285,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.08333333333333333,
+          "fpr_near_oos_context_heldout": 0.25,
+          "fpr_near_oos_context_seen": 0.027777777777777776,
+          "fpr_near_oos_train_calibrated": 0.002976190476190476,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.03571428571428571,
+            "Lobbying": 0.008928571428571428,
+            "Negotiation": 0.20535714285714285
+          }
+        },
+        "Threaten": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.6821428571428572,
+          "fpr_in_set_all": 0.16964285714285718,
+          "fpr_graph_neighbors": 0.049999999999999996,
+          "fpr_offgraph_confusers": 0.22142857142857142,
+          "fpr_far_ood": 0.1625,
+          "fpr_near_oos_pooled": 0.10714285714285714,
+          "fpr_near_oos_context_heldout": 0.19047619047619047,
+          "fpr_near_oos_context_seen": 0.07936507936507936,
+          "fpr_near_oos_train_calibrated": 0.026785714285714284,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.08035714285714286,
+            "Lobbying": 0.21428571428571427,
+            "Negotiation": 0.026785714285714284
+          }
+        }
+      },
+      "quarantined_lens": {
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.925,
+          "fpr_in_set_all": 0.24846938775510205,
+          "fpr_graph_neighbors": 0.03214285714285714,
+          "fpr_offgraph_confusers": 0.6202380952380953,
+          "fpr_far_ood": 0.05,
+          "fpr_near_oos_pooled": 0.23809523809523808,
+          "fpr_near_oos_context_heldout": 0.5,
+          "fpr_near_oos_context_seen": 0.15079365079365079,
+          "fpr_near_oos_train_calibrated": 0.1875,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.10714285714285714,
+            "Lobbying": 0.30357142857142855,
+            "Negotiation": 0.30357142857142855
+          }
+        }
+      }
+    },
+    "model_mined": {
+      "n_lenses_scored": 14,
+      "tpr_holdout": 0.9499999999999996,
+      "tpr_holdout_train_calibrated": 0.750765306122449,
+      "fpr_in_set_all": 0.2604045189504373,
+      "fpr_graph_neighbors": 0.15751093294460644,
+      "fpr_offgraph_confusers": 0.11929945054945056,
+      "fpr_far_ood": 0.16517857142857148,
+      "fpr_near_oos_pooled": 0.18176020408163265,
+      "fpr_near_oos_context_heldout": 0.22704081632653064,
+      "fpr_near_oos_context_seen": 0.16666666666666666,
+      "fpr_near_oos_train_calibrated": 0.050807823129251695,
+      "fpr_near_oos_by_concept": {
+        "Advertising": 0.14732142857142858,
+        "Lobbying": 0.20854591836734696,
+        "Negotiation": 0.18941326530612246
+      },
+      "per_lens": {
+        "ManipulativeCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.4392857142857143,
+          "fpr_in_set_all": 0.23903061224489794,
+          "fpr_graph_neighbors": 0.17908163265306123,
+          "fpr_offgraph_confusers": 0.027380952380952384,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.21726190476190477,
+          "fpr_near_oos_context_heldout": 0.2976190476190476,
+          "fpr_near_oos_context_seen": 0.19047619047619047,
+          "fpr_near_oos_train_calibrated": 0.002976190476190476,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.08928571428571429,
+            "Lobbying": 0.0,
+            "Negotiation": 0.5625
+          }
+        },
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8964285714285715,
+          "fpr_in_set_all": 0.29744897959183675,
+          "fpr_graph_neighbors": 0.2916666666666667,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 1.0,
+          "fpr_near_oos_pooled": 0.4583333333333333,
+          "fpr_near_oos_context_heldout": 0.5476190476190477,
+          "fpr_near_oos_context_seen": 0.42857142857142855,
+          "fpr_near_oos_train_calibrated": 0.38392857142857145,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.2767857142857143,
+            "Lobbying": 0.9910714285714286,
+            "Negotiation": 0.10714285714285714
+          }
+        },
+        "Propaganda": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9714285714285714,
+          "fpr_in_set_all": 0.22270408163265307,
+          "fpr_graph_neighbors": 0.10857142857142857,
+          "fpr_offgraph_confusers": 0.0035714285714285713,
+          "fpr_far_ood": 0.05,
+          "fpr_near_oos_pooled": 0.0625,
+          "fpr_near_oos_context_heldout": 0.2261904761904762,
+          "fpr_near_oos_context_seen": 0.007936507936507936,
+          "fpr_near_oos_train_calibrated": 0.09226190476190477,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.09821428571428571,
+            "Lobbying": 0.03571428571428571,
+            "Negotiation": 0.05357142857142857
+          }
+        },
+        "Misinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8321428571428572,
+          "fpr_in_set_all": 0.25790816326530613,
+          "fpr_graph_neighbors": 0.21071428571428572,
+          "fpr_offgraph_confusers": 0.055952380952380955,
+          "fpr_far_ood": 0.8,
+          "fpr_near_oos_pooled": 0.17261904761904762,
+          "fpr_near_oos_context_heldout": 0.25,
+          "fpr_near_oos_context_seen": 0.14682539682539683,
+          "fpr_near_oos_train_calibrated": 0.11011904761904762,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.38392857142857145,
+            "Lobbying": 0.044642857142857144,
+            "Negotiation": 0.08928571428571429
+          }
+        },
+        "Disinformation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.37857142857142856,
+          "fpr_in_set_all": 0.043877551020408155,
+          "fpr_graph_neighbors": 0.04428571428571428,
+          "fpr_offgraph_confusers": 0.0035714285714285713,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.18452380952380953,
+          "fpr_near_oos_context_heldout": 0.14285714285714285,
+          "fpr_near_oos_context_seen": 0.1984126984126984,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.017857142857142856,
+            "Lobbying": 0.5178571428571429,
+            "Negotiation": 0.017857142857142856
+          }
+        },
+        "PsychologicalExploitation": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.6678571428571428,
+          "fpr_in_set_all": 0.45510204081632655,
+          "fpr_graph_neighbors": 0.46547619047619043,
+          "fpr_offgraph_confusers": 0.04821428571428571,
+          "fpr_far_ood": 0.0625,
+          "fpr_near_oos_pooled": 0.0,
+          "fpr_near_oos_context_heldout": 0.0,
+          "fpr_near_oos_context_seen": 0.0,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "SycophancyRegister": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.825,
+          "fpr_in_set_all": 0.23010204081632654,
+          "fpr_graph_neighbors": 0.04523809523809524,
+          "fpr_offgraph_confusers": NaN,
+          "fpr_far_ood": 0.325,
+          "fpr_near_oos_pooled": 0.1875,
+          "fpr_near_oos_context_heldout": 0.32142857142857145,
+          "fpr_near_oos_context_seen": 0.14285714285714285,
+          "fpr_near_oos_train_calibrated": 0.050595238095238096,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.17857142857142858,
+            "Lobbying": 0.3125,
+            "Negotiation": 0.07142857142857142
+          }
+        },
+        "UnwarrantedPraise": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.5,
+          "fpr_in_set_all": 0.6186224489795918,
+          "fpr_graph_neighbors": 0.039285714285714285,
+          "fpr_offgraph_confusers": 0.6107142857142858,
+          "fpr_far_ood": 0.925,
+          "fpr_near_oos_pooled": 0.5892857142857143,
+          "fpr_near_oos_context_heldout": 0.5476190476190477,
+          "fpr_near_oos_context_seen": 0.6031746031746031,
+          "fpr_near_oos_train_calibrated": 0.08928571428571429,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.9553571428571429,
+            "Lobbying": 0.7410714285714286,
+            "Negotiation": 0.07142857142857142
+          }
+        },
+        "ExcessiveAgreement": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.7178571428571429,
+          "fpr_in_set_all": 0.33418367346938777,
+          "fpr_graph_neighbors": 0.0,
+          "fpr_offgraph_confusers": 0.7857142857142857,
+          "fpr_far_ood": 0.0375,
+          "fpr_near_oos_pooled": 0.49702380952380953,
+          "fpr_near_oos_context_heldout": 0.5238095238095238,
+          "fpr_near_oos_context_seen": 0.4880952380952381,
+          "fpr_near_oos_train_calibrated": 0.12797619047619047,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.03571428571428571,
+            "Lobbying": 0.7142857142857143,
+            "Negotiation": 0.7410714285714286
+          }
+        },
+        "Misdirection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9,
+          "fpr_in_set_all": 0.3073979591836734,
+          "fpr_graph_neighbors": 0.43571428571428567,
+          "fpr_offgraph_confusers": 0.0026785714285714286,
+          "fpr_far_ood": 0.0125,
+          "fpr_near_oos_pooled": 0.023809523809523808,
+          "fpr_near_oos_context_heldout": 0.047619047619047616,
+          "fpr_near_oos_context_seen": 0.015873015873015872,
+          "fpr_near_oos_train_calibrated": 0.017857142857142856,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.07142857142857142,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "StrategicDeceptionPlanningProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.775,
+          "fpr_in_set_all": 0.41785714285714287,
+          "fpr_graph_neighbors": 0.33928571428571425,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 0.0125,
+          "fpr_near_oos_pooled": 0.36607142857142855,
+          "fpr_near_oos_context_heldout": 0.4523809523809524,
+          "fpr_near_oos_context_seen": 0.3373015873015873,
+          "fpr_near_oos_train_calibrated": 0.08035714285714286,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.14285714285714285,
+            "Lobbying": 0.15178571428571427,
+            "Negotiation": 0.8035714285714286
+          }
+        },
+        "SpecificationGamingProcess": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.875,
+          "fpr_in_set_all": 0.04056122448979592,
+          "fpr_graph_neighbors": 0.06785714285714285,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 0.075,
+          "fpr_near_oos_pooled": 0.05654761904761905,
+          "fpr_near_oos_context_heldout": 0.10714285714285714,
+          "fpr_near_oos_context_seen": 0.03968253968253968,
+          "fpr_near_oos_train_calibrated": 0.01488095238095238,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.017857142857142856,
+            "Lobbying": 0.0,
+            "Negotiation": 0.15178571428571427
+          }
+        },
+        "UlteriorMotiveDetection": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8214285714285714,
+          "fpr_in_set_all": 0.09642857142857142,
+          "fpr_graph_neighbors": 0.1125,
+          "fpr_offgraph_confusers": 0.013095238095238096,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.020833333333333332,
+          "fpr_near_oos_context_heldout": 0.011904761904761904,
+          "fpr_near_oos_context_seen": 0.023809523809523808,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.0,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0625
+          }
+        },
+        "Deepfake": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8857142857142857,
+          "fpr_in_set_all": 0.21428571428571425,
+          "fpr_graph_neighbors": 0.09047619047619047,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 0.0,
+          "fpr_near_oos_pooled": 0.008928571428571428,
+          "fpr_near_oos_context_heldout": 0.023809523809523808,
+          "fpr_near_oos_context_seen": 0.003968253968253968,
+          "fpr_near_oos_train_calibrated": 0.0,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.026785714285714284,
+            "Lobbying": 0.0,
+            "Negotiation": 0.0
+          }
+        },
+        "Threaten": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.9214285714285714,
+          "fpr_in_set_all": 0.16760204081632654,
+          "fpr_graph_neighbors": 0.06666666666666667,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 0.0125,
+          "fpr_near_oos_pooled": 0.15773809523809523,
+          "fpr_near_oos_context_heldout": 0.2261904761904762,
+          "fpr_near_oos_context_seen": 0.1349206349206349,
+          "fpr_near_oos_train_calibrated": 0.125,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.044642857142857144,
+            "Lobbying": 0.4017857142857143,
+            "Negotiation": 0.026785714285714284
+          }
+        }
+      },
+      "quarantined_lens": {
+        "PersuasiveCommunication": {
+          "tpr_holdout": 0.95,
+          "tpr_holdout_train_calibrated": 0.8964285714285715,
+          "fpr_in_set_all": 0.29744897959183675,
+          "fpr_graph_neighbors": 0.2916666666666667,
+          "fpr_offgraph_confusers": 0.0,
+          "fpr_far_ood": 1.0,
+          "fpr_near_oos_pooled": 0.4583333333333333,
+          "fpr_near_oos_context_heldout": 0.5476190476190477,
+          "fpr_near_oos_context_seen": 0.42857142857142855,
+          "fpr_near_oos_train_calibrated": 0.38392857142857145,
+          "fpr_near_oos_by_concept": {
+            "Advertising": 0.2767857142857143,
+            "Lobbying": 0.9910714285714286,
+            "Negotiation": 0.10714285714285714
+          }
+        }
+      }
+    }
+  }
+}

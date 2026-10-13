@@ -1,0 +1,528 @@
+{
+ "source_rows": "sweep_n70_rows.json",
+ "volume_per_context": 70,
+ "model": "gemma-2-9b",
+ "unit": "per directed edge, averaged over 4 held-out contexts x 30 seeds",
+ "edges": [
+  {
+   "target": "Deepfake",
+   "heldout_sibling": "Disinformation",
+   "direct_neighbors_dF1": 0.030338370223466422,
+   "direct_neighbors_vocab_adv": 0.24323545226642138,
+   "graph_aware_mixed_dF1": 0.029817206617139845,
+   "graph_aware_mixed_vocab_adv": 0.10816155526818455,
+   "heldout_edge_graph_aware_dF1": 0.025297479499511444,
+   "heldout_edge_graph_aware_vocab_adv": 0.0025709289963544773
+  },
+  {
+   "target": "Deepfake",
+   "heldout_sibling": "Misinformation",
+   "direct_neighbors_dF1": 0.0014073263546614358,
+   "direct_neighbors_vocab_adv": 0.25205484262847716,
+   "graph_aware_mixed_dF1": 0.001887811531737164,
+   "graph_aware_mixed_vocab_adv": 0.11041882568190026,
+   "heldout_edge_graph_aware_dF1": 0.0021319640358208537,
+   "heldout_edge_graph_aware_vocab_adv": 0.004541990960036281
+  },
+  {
+   "target": "Deepfake",
+   "heldout_sibling": "Propaganda",
+   "direct_neighbors_dF1": -3.870955479544821e-05,
+   "direct_neighbors_vocab_adv": 0.26987226760075544,
+   "graph_aware_mixed_dF1": 0.0003831673787287511,
+   "graph_aware_mixed_vocab_adv": 0.11652288839581794,
+   "heldout_edge_graph_aware_dF1": -0.018206129856709965,
+   "heldout_edge_graph_aware_vocab_adv": 0.006350040584747365
+  },
+  {
+   "target": "Disinformation",
+   "heldout_sibling": "Deepfake",
+   "direct_neighbors_dF1": 0.19551647515416254,
+   "direct_neighbors_vocab_adv": 0.15603619108367758,
+   "graph_aware_mixed_dF1": 0.184164713153399,
+   "graph_aware_mixed_vocab_adv": 0.06423645697152763,
+   "heldout_edge_graph_aware_dF1": 0.020336190194345953,
+   "heldout_edge_graph_aware_vocab_adv": 0.0013889160825300002
+  },
+  {
+   "target": "Disinformation",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": -0.0015639603762830124,
+   "direct_neighbors_vocab_adv": 0.1277536942429999,
+   "graph_aware_mixed_dF1": -0.006183381732171837,
+   "graph_aware_mixed_vocab_adv": 0.05334447868164114,
+   "heldout_edge_graph_aware_dF1": -0.025235082260266408,
+   "heldout_edge_graph_aware_vocab_adv": -0.008203526963468995
+  },
+  {
+   "target": "Disinformation",
+   "heldout_sibling": "Misinformation",
+   "direct_neighbors_dF1": 0.14349676643837822,
+   "direct_neighbors_vocab_adv": 0.14691870721496428,
+   "graph_aware_mixed_dF1": 0.10071677007477585,
+   "graph_aware_mixed_vocab_adv": 0.055783035380620266,
+   "heldout_edge_graph_aware_dF1": -0.013741470079759422,
+   "heldout_edge_graph_aware_vocab_adv": -0.0023274314375273755
+  },
+  {
+   "target": "Disinformation",
+   "heldout_sibling": "Propaganda",
+   "direct_neighbors_dF1": -0.0359967557050892,
+   "direct_neighbors_vocab_adv": 0.17317947887600943,
+   "graph_aware_mixed_dF1": -0.03372216301954992,
+   "graph_aware_mixed_vocab_adv": 0.06984965078999585,
+   "heldout_edge_graph_aware_dF1": -0.042458964179944124,
+   "heldout_edge_graph_aware_vocab_adv": 0.007503965746457821
+  },
+  {
+   "target": "Disinformation",
+   "heldout_sibling": "StrategicDeceptionPlanningProcess",
+   "direct_neighbors_dF1": -0.02785390250612103,
+   "direct_neighbors_vocab_adv": 0.14644682741612344,
+   "graph_aware_mixed_dF1": -0.03077945185181934,
+   "graph_aware_mixed_vocab_adv": 0.0581766124406607,
+   "heldout_edge_graph_aware_dF1": -0.04267231825579627,
+   "heldout_edge_graph_aware_vocab_adv": -0.001655849812643357
+  },
+  {
+   "target": "ExcessiveAgreement",
+   "heldout_sibling": "SycophancyRegister",
+   "direct_neighbors_dF1": 0.22003109408479843,
+   "direct_neighbors_vocab_adv": 0.4403311109953974,
+   "graph_aware_mixed_dF1": 0.19171401683607023,
+   "graph_aware_mixed_vocab_adv": 0.19412081365969863,
+   "heldout_edge_graph_aware_dF1": 0.16183704675848437,
+   "heldout_edge_graph_aware_vocab_adv": 0.05410028812670677
+  },
+  {
+   "target": "ExcessiveAgreement",
+   "heldout_sibling": "UnwarrantedPraise",
+   "direct_neighbors_dF1": 0.1048333553806651,
+   "direct_neighbors_vocab_adv": 0.40939076650064976,
+   "graph_aware_mixed_dF1": 0.0819857556957668,
+   "graph_aware_mixed_vocab_adv": 0.1751802325342183,
+   "heldout_edge_graph_aware_dF1": 0.06753747686673535,
+   "heldout_edge_graph_aware_vocab_adv": 0.03219525333473493
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "Disinformation",
+   "direct_neighbors_dF1": 0.0349181270799199,
+   "direct_neighbors_vocab_adv": 0.10644851841010539,
+   "graph_aware_mixed_dF1": 0.002618244769984095,
+   "graph_aware_mixed_vocab_adv": 0.04973179775504178,
+   "heldout_edge_graph_aware_dF1": -0.012451595884506934,
+   "heldout_edge_graph_aware_vocab_adv": 0.0013727561658267982
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "Misdirection",
+   "direct_neighbors_dF1": 0.02381444725967446,
+   "direct_neighbors_vocab_adv": 0.10242404706200434,
+   "graph_aware_mixed_dF1": -0.009085107974900163,
+   "graph_aware_mixed_vocab_adv": 0.048838384377479026,
+   "heldout_edge_graph_aware_dF1": -0.023235233717994793,
+   "heldout_edge_graph_aware_vocab_adv": -0.0010129478020376081
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "Misinformation",
+   "direct_neighbors_dF1": 0.020013257757286965,
+   "direct_neighbors_vocab_adv": 0.12067155958073394,
+   "graph_aware_mixed_dF1": -0.00696978479833059,
+   "graph_aware_mixed_vocab_adv": 0.053530564666171336,
+   "heldout_edge_graph_aware_dF1": -0.01154965521777999,
+   "heldout_edge_graph_aware_vocab_adv": 0.0060273065306435305
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "PersuasiveCommunication",
+   "direct_neighbors_dF1": 0.04474379652603677,
+   "direct_neighbors_vocab_adv": 0.11358059669255122,
+   "graph_aware_mixed_dF1": 0.011606630271406104,
+   "graph_aware_mixed_vocab_adv": 0.05244983390722015,
+   "heldout_edge_graph_aware_dF1": -0.012230773702950275,
+   "heldout_edge_graph_aware_vocab_adv": 0.0022847224487471812
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "Propaganda",
+   "direct_neighbors_dF1": -0.021229566077924856,
+   "direct_neighbors_vocab_adv": 0.11458261278764297,
+   "graph_aware_mixed_dF1": -0.04275613454486829,
+   "graph_aware_mixed_vocab_adv": 0.05188611274667116,
+   "heldout_edge_graph_aware_dF1": -0.049649371091105204,
+   "heldout_edge_graph_aware_vocab_adv": 0.0007265919664938391
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "PsychologicalExploitation",
+   "direct_neighbors_dF1": 0.04014270630158217,
+   "direct_neighbors_vocab_adv": 0.09977045908448752,
+   "graph_aware_mixed_dF1": 0.014262102342076057,
+   "graph_aware_mixed_vocab_adv": 0.04839202353615876,
+   "heldout_edge_graph_aware_dF1": 0.018867594102927356,
+   "heldout_edge_graph_aware_vocab_adv": -0.0034267482843186453
+  },
+  {
+   "target": "ManipulativeCommunication",
+   "heldout_sibling": "Threaten",
+   "direct_neighbors_dF1": 0.15144165484748207,
+   "direct_neighbors_vocab_adv": 0.11637682197267564,
+   "graph_aware_mixed_dF1": 0.12429810707352466,
+   "graph_aware_mixed_vocab_adv": 0.05390201465105636,
+   "heldout_edge_graph_aware_dF1": 0.06353369537505907,
+   "heldout_edge_graph_aware_vocab_adv": 0.0038829336260944518
+  },
+  {
+   "target": "Misdirection",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": 0.017346626964561972,
+   "direct_neighbors_vocab_adv": 0.19386402372949557,
+   "graph_aware_mixed_dF1": 0.0073481935943929605,
+   "graph_aware_mixed_vocab_adv": 0.07735505097249165,
+   "heldout_edge_graph_aware_dF1": 0.008133366342246325,
+   "heldout_edge_graph_aware_vocab_adv": 0.005006190939921553
+  },
+  {
+   "target": "Misdirection",
+   "heldout_sibling": "StrategicDeceptionPlanningProcess",
+   "direct_neighbors_dF1": 0.01492891623874187,
+   "direct_neighbors_vocab_adv": 0.20839213298552994,
+   "graph_aware_mixed_dF1": 0.003588467547517703,
+   "graph_aware_mixed_vocab_adv": 0.08258165382778146,
+   "heldout_edge_graph_aware_dF1": 0.0007090234625018389,
+   "heldout_edge_graph_aware_vocab_adv": 0.010517655301085012
+  },
+  {
+   "target": "Misdirection",
+   "heldout_sibling": "Threaten",
+   "direct_neighbors_dF1": 0.020242984275361576,
+   "direct_neighbors_vocab_adv": 0.20320425189902955,
+   "graph_aware_mixed_dF1": 0.007845021338844255,
+   "graph_aware_mixed_vocab_adv": 0.08108510796541776,
+   "heldout_edge_graph_aware_dF1": -0.000934914576632448,
+   "heldout_edge_graph_aware_vocab_adv": 0.0035525221571744694
+  },
+  {
+   "target": "Misdirection",
+   "heldout_sibling": "UlteriorMotiveDetection",
+   "direct_neighbors_dF1": 0.018326037417794525,
+   "direct_neighbors_vocab_adv": 0.2100453195707373,
+   "graph_aware_mixed_dF1": 0.006342678771994052,
+   "graph_aware_mixed_vocab_adv": 0.08381574421250841,
+   "heldout_edge_graph_aware_dF1": 0.004481419126258578,
+   "heldout_edge_graph_aware_vocab_adv": 0.013131476120309396
+  },
+  {
+   "target": "Misinformation",
+   "heldout_sibling": "Deepfake",
+   "direct_neighbors_dF1": 0.10751241118551726,
+   "direct_neighbors_vocab_adv": 0.15902525519814367,
+   "graph_aware_mixed_dF1": 0.1103013306712797,
+   "graph_aware_mixed_vocab_adv": 0.06542441255045663,
+   "heldout_edge_graph_aware_dF1": 0.10725686027823264,
+   "heldout_edge_graph_aware_vocab_adv": 0.004238296250230975
+  },
+  {
+   "target": "Misinformation",
+   "heldout_sibling": "Disinformation",
+   "direct_neighbors_dF1": 0.22247683940967825,
+   "direct_neighbors_vocab_adv": 0.15326708916933957,
+   "graph_aware_mixed_dF1": 0.20682094687910416,
+   "graph_aware_mixed_vocab_adv": 0.06284288550579982,
+   "heldout_edge_graph_aware_dF1": 0.04052438030565109,
+   "heldout_edge_graph_aware_vocab_adv": 0.0030725021336668597
+  },
+  {
+   "target": "Misinformation",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": 0.010173023890901921,
+   "direct_neighbors_vocab_adv": 0.13298891723472017,
+   "graph_aware_mixed_dF1": 0.016843090540046138,
+   "graph_aware_mixed_vocab_adv": 0.05356650156350824,
+   "heldout_edge_graph_aware_dF1": 0.006306272897140266,
+   "heldout_edge_graph_aware_vocab_adv": -0.00569128816259007
+  },
+  {
+   "target": "Misinformation",
+   "heldout_sibling": "PersuasiveCommunication",
+   "direct_neighbors_dF1": -0.021077596354584883,
+   "direct_neighbors_vocab_adv": 0.13371833451845425,
+   "graph_aware_mixed_dF1": -0.018187944718408407,
+   "graph_aware_mixed_vocab_adv": 0.05352081110986237,
+   "heldout_edge_graph_aware_dF1": -0.016969321549048576,
+   "heldout_edge_graph_aware_vocab_adv": -0.008117889648404689
+  },
+  {
+   "target": "Misinformation",
+   "heldout_sibling": "Propaganda",
+   "direct_neighbors_dF1": -0.023285007725073092,
+   "direct_neighbors_vocab_adv": 0.16818040276710142,
+   "graph_aware_mixed_dF1": -0.015954427037755868,
+   "graph_aware_mixed_vocab_adv": 0.06656897514859729,
+   "heldout_edge_graph_aware_dF1": -0.020253467952064143,
+   "heldout_edge_graph_aware_vocab_adv": 0.005530742950821775
+  },
+  {
+   "target": "PersuasiveCommunication",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": 0.0033262790515482476,
+   "direct_neighbors_vocab_adv": 0.23156174345478675,
+   "graph_aware_mixed_dF1": -0.0010308856596480676,
+   "graph_aware_mixed_vocab_adv": 0.09349076761399511,
+   "heldout_edge_graph_aware_dF1": -0.002991738736999643,
+   "heldout_edge_graph_aware_vocab_adv": -0.005058125622303348
+  },
+  {
+   "target": "PersuasiveCommunication",
+   "heldout_sibling": "Misinformation",
+   "direct_neighbors_dF1": 0.003058230244347702,
+   "direct_neighbors_vocab_adv": 0.2526614809121383,
+   "graph_aware_mixed_dF1": 0.0008218966468267844,
+   "graph_aware_mixed_vocab_adv": 0.10375490550578717,
+   "heldout_edge_graph_aware_dF1": 0.00018151022540675298,
+   "heldout_edge_graph_aware_vocab_adv": 0.0025675756283123877
+  },
+  {
+   "target": "PersuasiveCommunication",
+   "heldout_sibling": "Propaganda",
+   "direct_neighbors_dF1": 0.010035471476294319,
+   "direct_neighbors_vocab_adv": 0.2782528614663271,
+   "graph_aware_mixed_dF1": -0.0007293655154053891,
+   "graph_aware_mixed_vocab_adv": 0.11033180695025607,
+   "heldout_edge_graph_aware_dF1": -0.0019574897705962823,
+   "heldout_edge_graph_aware_vocab_adv": 0.008419571942119179
+  },
+  {
+   "target": "Propaganda",
+   "heldout_sibling": "Deepfake",
+   "direct_neighbors_dF1": 0.013171438078949578,
+   "direct_neighbors_vocab_adv": 0.16713413455009282,
+   "graph_aware_mixed_dF1": 0.011120886106096788,
+   "graph_aware_mixed_vocab_adv": 0.06926870047438252,
+   "heldout_edge_graph_aware_dF1": 0.006304787721009816,
+   "heldout_edge_graph_aware_vocab_adv": 0.006092173390493705
+  },
+  {
+   "target": "Propaganda",
+   "heldout_sibling": "Disinformation",
+   "direct_neighbors_dF1": 0.002526674312723722,
+   "direct_neighbors_vocab_adv": 0.16798300121308551,
+   "graph_aware_mixed_dF1": 0.0004795972806014126,
+   "graph_aware_mixed_vocab_adv": 0.0682440454425248,
+   "heldout_edge_graph_aware_dF1": 0.00035710561985194124,
+   "heldout_edge_graph_aware_vocab_adv": 0.010772011010308542
+  },
+  {
+   "target": "Propaganda",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": 0.013547573060247035,
+   "direct_neighbors_vocab_adv": 0.13691394383233693,
+   "graph_aware_mixed_dF1": 0.007562965423041541,
+   "graph_aware_mixed_vocab_adv": 0.055021992037279324,
+   "heldout_edge_graph_aware_dF1": 0.0015621405410601327,
+   "heldout_edge_graph_aware_vocab_adv": -0.002108623813576996
+  },
+  {
+   "target": "Propaganda",
+   "heldout_sibling": "Misinformation",
+   "direct_neighbors_dF1": 0.003132295813618847,
+   "direct_neighbors_vocab_adv": 0.16755729384038542,
+   "graph_aware_mixed_dF1": 0.0007203123569059657,
+   "graph_aware_mixed_vocab_adv": 0.06815528550197167,
+   "heldout_edge_graph_aware_dF1": 0.001388473480181258,
+   "heldout_edge_graph_aware_vocab_adv": 0.009722584598888077
+  },
+  {
+   "target": "Propaganda",
+   "heldout_sibling": "PersuasiveCommunication",
+   "direct_neighbors_dF1": 0.0028334235182466416,
+   "direct_neighbors_vocab_adv": 0.14694034532509218,
+   "graph_aware_mixed_dF1": 0.0011460777426931781,
+   "graph_aware_mixed_vocab_adv": 0.056118096976136365,
+   "heldout_edge_graph_aware_dF1": 0.0011460777426931781,
+   "heldout_edge_graph_aware_vocab_adv": -0.0031351147285085756
+  },
+  {
+   "target": "PsychologicalExploitation",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": -0.0043783651520451,
+   "direct_neighbors_vocab_adv": 0.22539707051113342,
+   "graph_aware_mixed_dF1": -0.007027376478582496,
+   "graph_aware_mixed_vocab_adv": 0.0908077892019526,
+   "heldout_edge_graph_aware_dF1": -0.012315057320248134,
+   "heldout_edge_graph_aware_vocab_adv": -0.009793755211908424
+  },
+  {
+   "target": "PsychologicalExploitation",
+   "heldout_sibling": "SycophancyRegister",
+   "direct_neighbors_dF1": 0.14530626076667078,
+   "direct_neighbors_vocab_adv": 0.26960922385011393,
+   "graph_aware_mixed_dF1": 0.125006163411607,
+   "graph_aware_mixed_vocab_adv": 0.10591032751055707,
+   "heldout_edge_graph_aware_dF1": -0.01679756732126372,
+   "heldout_edge_graph_aware_vocab_adv": 0.0037816504988069295
+  },
+  {
+   "target": "PsychologicalExploitation",
+   "heldout_sibling": "Threaten",
+   "direct_neighbors_dF1": 0.09323994362889053,
+   "direct_neighbors_vocab_adv": 0.26413990697883066,
+   "graph_aware_mixed_dF1": 0.06172717127729451,
+   "graph_aware_mixed_vocab_adv": 0.10686203795932252,
+   "heldout_edge_graph_aware_dF1": 0.006156237049963352,
+   "heldout_edge_graph_aware_vocab_adv": 0.005808807321758493
+  },
+  {
+   "target": "SpecificationGamingProcess",
+   "heldout_sibling": "StrategicDeceptionPlanningProcess",
+   "direct_neighbors_dF1": 0.03628969980652556,
+   "direct_neighbors_vocab_adv": 0.4113778807220618,
+   "graph_aware_mixed_dF1": 0.019552932260698118,
+   "graph_aware_mixed_vocab_adv": 0.17235253147542176,
+   "heldout_edge_graph_aware_dF1": 0.0012368873884204758,
+   "heldout_edge_graph_aware_vocab_adv": 0.03555317037782855
+  },
+  {
+   "target": "SpecificationGamingProcess",
+   "heldout_sibling": "UlteriorMotiveDetection",
+   "direct_neighbors_dF1": 0.01904427374327488,
+   "direct_neighbors_vocab_adv": 0.39596397655088006,
+   "graph_aware_mixed_dF1": 0.0027543292957336206,
+   "graph_aware_mixed_vocab_adv": 0.16484766913548077,
+   "heldout_edge_graph_aware_dF1": 0.002418864770395863,
+   "heldout_edge_graph_aware_vocab_adv": 0.0277916697738626
+  },
+  {
+   "target": "StrategicDeceptionPlanningProcess",
+   "heldout_sibling": "Disinformation",
+   "direct_neighbors_dF1": 0.020196938389382954,
+   "direct_neighbors_vocab_adv": 0.24339540831863554,
+   "graph_aware_mixed_dF1": 0.009366062589473426,
+   "graph_aware_mixed_vocab_adv": 0.10060647139465342,
+   "heldout_edge_graph_aware_dF1": -0.00468573140675127,
+   "heldout_edge_graph_aware_vocab_adv": -0.0009636462354911464
+  },
+  {
+   "target": "StrategicDeceptionPlanningProcess",
+   "heldout_sibling": "Misdirection",
+   "direct_neighbors_dF1": 0.02142037629880778,
+   "direct_neighbors_vocab_adv": 0.23160095975958778,
+   "graph_aware_mixed_dF1": 0.011196829498220547,
+   "graph_aware_mixed_vocab_adv": 0.09530893218216087,
+   "heldout_edge_graph_aware_dF1": 0.010416276000402794,
+   "heldout_edge_graph_aware_vocab_adv": -0.005216153309067543
+  },
+  {
+   "target": "StrategicDeceptionPlanningProcess",
+   "heldout_sibling": "SpecificationGamingProcess",
+   "direct_neighbors_dF1": 0.04958974128710169,
+   "direct_neighbors_vocab_adv": 0.2763054703177499,
+   "graph_aware_mixed_dF1": 0.03654723063733637,
+   "graph_aware_mixed_vocab_adv": 0.11123329567867077,
+   "heldout_edge_graph_aware_dF1": 0.011652509524020015,
+   "heldout_edge_graph_aware_vocab_adv": 0.010137602944364157
+  },
+  {
+   "target": "SycophancyRegister",
+   "heldout_sibling": "ExcessiveAgreement",
+   "direct_neighbors_dF1": -0.0031190854939325413,
+   "direct_neighbors_vocab_adv": 0.2557119916466257,
+   "graph_aware_mixed_dF1": 0.001102305059557529,
+   "graph_aware_mixed_vocab_adv": 0.10847190969700903,
+   "heldout_edge_graph_aware_dF1": -0.0019156485710346088,
+   "heldout_edge_graph_aware_vocab_adv": 0.008054393584767094
+  },
+  {
+   "target": "SycophancyRegister",
+   "heldout_sibling": "PsychologicalExploitation",
+   "direct_neighbors_dF1": 0.01542098265790273,
+   "direct_neighbors_vocab_adv": 0.2667568842337296,
+   "graph_aware_mixed_dF1": 0.01753340849269087,
+   "graph_aware_mixed_vocab_adv": 0.11771149094933434,
+   "heldout_edge_graph_aware_dF1": 0.0031297362174629436,
+   "heldout_edge_graph_aware_vocab_adv": 0.015763040789772184
+  },
+  {
+   "target": "SycophancyRegister",
+   "heldout_sibling": "UnwarrantedPraise",
+   "direct_neighbors_dF1": 0.07969103291560292,
+   "direct_neighbors_vocab_adv": 0.26622849337149374,
+   "graph_aware_mixed_dF1": 0.07133702292090889,
+   "graph_aware_mixed_vocab_adv": 0.11446780241975091,
+   "heldout_edge_graph_aware_dF1": 0.018274323667087596,
+   "heldout_edge_graph_aware_vocab_adv": 0.012975216484374356
+  },
+  {
+   "target": "Threaten",
+   "heldout_sibling": "ManipulativeCommunication",
+   "direct_neighbors_dF1": 0.02217348759131365,
+   "direct_neighbors_vocab_adv": 0.25538453081838614,
+   "graph_aware_mixed_dF1": 0.019659275255534348,
+   "graph_aware_mixed_vocab_adv": 0.10921686938814855,
+   "heldout_edge_graph_aware_dF1": 0.005921733984700925,
+   "heldout_edge_graph_aware_vocab_adv": 0.009186993652764873
+  },
+  {
+   "target": "Threaten",
+   "heldout_sibling": "Misdirection",
+   "direct_neighbors_dF1": -0.0013098994369596633,
+   "direct_neighbors_vocab_adv": 0.25861293434102256,
+   "graph_aware_mixed_dF1": -0.0005055394776701296,
+   "graph_aware_mixed_vocab_adv": 0.10620543152183329,
+   "heldout_edge_graph_aware_dF1": -0.0010800823057340824,
+   "heldout_edge_graph_aware_vocab_adv": 0.00784665197181494
+  },
+  {
+   "target": "Threaten",
+   "heldout_sibling": "PsychologicalExploitation",
+   "direct_neighbors_dF1": 5.9952038369304185e-05,
+   "direct_neighbors_vocab_adv": 0.26972305852195455,
+   "graph_aware_mixed_dF1": 5.9952038369304185e-05,
+   "graph_aware_mixed_vocab_adv": 0.10969674139744073,
+   "heldout_edge_graph_aware_dF1": 5.9952038369304185e-05,
+   "heldout_edge_graph_aware_vocab_adv": 0.00907143725600103
+  },
+  {
+   "target": "UlteriorMotiveDetection",
+   "heldout_sibling": "Misdirection",
+   "direct_neighbors_dF1": 0.00041089801334542875,
+   "direct_neighbors_vocab_adv": 0.3592147094963806,
+   "graph_aware_mixed_dF1": -0.00014794731238630028,
+   "graph_aware_mixed_vocab_adv": 0.1430535763003391,
+   "heldout_edge_graph_aware_dF1": -0.002606920175687394,
+   "heldout_edge_graph_aware_vocab_adv": -0.006328098697682438
+  },
+  {
+   "target": "UlteriorMotiveDetection",
+   "heldout_sibling": "SpecificationGamingProcess",
+   "direct_neighbors_dF1": 0.004104930056102884,
+   "direct_neighbors_vocab_adv": 0.3986568205824769,
+   "graph_aware_mixed_dF1": -0.0002928051424996599,
+   "graph_aware_mixed_vocab_adv": 0.16449525694731484,
+   "heldout_edge_graph_aware_dF1": -0.002708415914826088,
+   "heldout_edge_graph_aware_vocab_adv": 0.013148561582279995
+  },
+  {
+   "target": "UnwarrantedPraise",
+   "heldout_sibling": "ExcessiveAgreement",
+   "direct_neighbors_dF1": -0.02320179300986999,
+   "direct_neighbors_vocab_adv": 0.3603358817869928,
+   "graph_aware_mixed_dF1": -0.03855428036513699,
+   "graph_aware_mixed_vocab_adv": 0.1514940598907834,
+   "heldout_edge_graph_aware_dF1": -0.06320683337294386,
+   "heldout_edge_graph_aware_vocab_adv": -0.0026764691537004837
+  },
+  {
+   "target": "UnwarrantedPraise",
+   "heldout_sibling": "SycophancyRegister",
+   "direct_neighbors_dF1": 0.2622938559121631,
+   "direct_neighbors_vocab_adv": 0.407218230377492,
+   "graph_aware_mixed_dF1": 0.2511168048256818,
+   "graph_aware_mixed_vocab_adv": 0.17934897954787912,
+   "heldout_edge_graph_aware_dF1": 0.04027407892573041,
+   "heldout_edge_graph_aware_vocab_adv": 0.026332077347231177
+  }
+ ]
+}

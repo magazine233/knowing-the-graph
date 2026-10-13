@@ -1,0 +1,89 @@
+{
+  "source_rows": "sweep_n70_rows.json",
+  "volume_per_context": 70,
+  "model": "gemma-2-9b",
+  "unit": "per directed edge, averaged over 4 held-out contexts x 30 seeds",
+  "status": "pre-registered item (PREREGISTRATION.md \u00a74); specification chosen post hoc",
+  "specification": "dF1_edge ~ 1 + vocab_adv_edge (OLS); intercept = net-of-vocabulary effect",
+  "interpretable": [
+    "heldout_edge_graph_aware"
+  ],
+  "caveat": "direct_neighbors and graph_aware_mixed include the evaluated sibling among their negatives (self-Jaccard = 1), so their vocab_adv is dominated by self-overlap and their intercepts are extrapolations; do not read them as net-of-vocabulary effects",
+  "results": {
+    "direct_neighbors": {
+      "n_edges": 52,
+      "gross": {
+        "mean_dF1": 0.0399908333472966,
+        "ci95": [
+          0.020795957636050542,
+          0.05918570905854265
+        ],
+        "p_t": 0.0001134778782263597,
+        "p_wilcoxon": 2.288404547211542e-05,
+        "mde_80pct_power": 0.02730970013895302
+      },
+      "mean_vocab_advantage": 0.22435380612053887,
+      "net_of_vocab_ols": {
+        "intercept": 0.0075727903200655,
+        "intercept_ci95": [
+          -0.04246707149845969,
+          0.05761265213859069
+        ],
+        "intercept_p": 0.7624155090849235,
+        "slope_vocab_adv": 0.14449517745116305,
+        "slope_p": 0.16565724530198364,
+        "r2": 0.03807731409159032
+      }
+    },
+    "graph_aware_mixed": {
+      "n_edges": 52,
+      "gross": {
+        "mean_dF1": 0.029604401588037035,
+        "ci95": [
+          0.011711959304597896,
+          0.04749684387147617
+        ],
+        "p_t": 0.0016594426270052608,
+        "p_wilcoxon": 0.0010104639629207376,
+        "mde_80pct_power": 0.025456650038528764
+      },
+      "mean_vocab_advantage": 0.09361083071924757,
+      "net_of_vocab_ols": {
+        "intercept": -0.008064789324767863,
+        "intercept_ci95": [
+          -0.05348346497848585,
+          0.03735388632895013
+        ],
+        "intercept_p": 0.7228539964365323,
+        "slope_vocab_adv": 0.40240205778944793,
+        "slope_p": 0.07701167870682035,
+        "r2": 0.0612090188684985
+      }
+    },
+    "heldout_edge_graph_aware": {
+      "n_edges": 52,
+      "gross": {
+        "mean_dF1": 0.004568840017712083,
+        "ci95": [
+          -0.0053035815253179835,
+          0.01444126156074215
+        ],
+        "p_t": 0.3572212395218076,
+        "p_wilcoxon": 0.7777024310309617,
+        "mde_80pct_power": 0.01404608584297985
+      },
+      "mean_vocab_advantage": 0.00625585772490581,
+      "net_of_vocab_ols": {
+        "intercept": -0.006187163947501397,
+        "intercept_ci95": [
+          -0.015524626553884174,
+          0.00315029865888138
+        ],
+        "intercept_p": 0.1892574031619991,
+        "slope_vocab_adv": 1.7193491984946687,
+        "slope_p": 1.16587174783862e-05,
+        "r2": 0.32165765997734486
+      }
+    }
+  }
+}

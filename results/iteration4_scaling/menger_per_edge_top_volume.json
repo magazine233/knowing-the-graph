@@ -1,0 +1,29 @@
+{
+  "status": "exploratory, post hoc, NOT pre-registered",
+  "graph": "SET_G_N15_graph_contrastive_boundary_v1",
+  "n_edges": 26,
+  "volume_per_context": 70,
+  "unit": "undirected edge; held-out-edge dF1 averaged over both directions",
+  "hub": "ManipulativeCommunication",
+  "hub_degree": 7,
+  "k_alt_distribution": {
+    "0": 1,
+    "1": 10,
+    "2": 9,
+    "3": 5,
+    "4": 1
+  },
+  "non_hub_edges": 19,
+  "non_hub_edges_all_alternates_via_hub": 3,
+  "spearman_k_alt_vs_dF1": {
+    "rho": -0.3438930251338273,
+    "p": 0.08539775772574675
+  },
+  "k_alt_ge2_vs_le1": {
+    "mean_ge2": 0.0016859014568696847,
+    "n_ge2": 15,
+    "mean_le1": 0.008500119873406263,
+    "n_le1": 11,
+    "mannwhitney_p": 0.23259597401867171
+  }
+}

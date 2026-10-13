@@ -7,8 +7,8 @@ abstract: >-
   in the residual stream of Gemma-2-9B, independently peer-replicated on
   Gemma-4-E4B. Finding: relations help only as local hard-negative contrast
   (~0.06 F1, ~1/3 lexical); the graph's connectivity adds no measurable benefit
-  at any data volume tested (a powered, pre-registered null on the alternate-path
-  / Menger prediction).
+  at any data volume tested (a pre-registered null on the alternate-path / Menger
+  prediction, scoped to this graph).
 authors:
   - family-names: Boudville
     given-names: Jason
@@ -24,4 +24,14 @@ keywords:
   - linear probes
   - concept detection
   - pre-registration
-# repository-code: "https://github.com/<owner>/<repo>"   # set on publish
+repository-code: "https://github.com/magazine233/knowing-the-graph"
+# The paper itself is single-author; p0ss is credited there as the independent
+# peer replicator (at their request). The repository authors above also cover
+# p0ss's code and results (see LICENSE / NOTICE).
+preferred-citation:
+  type: article
+  title: "Knowing the Graph: Does Relational Structure Improve Linear-Probe Detection of Related AI-Safety Concepts?"
+  authors:
+    - family-names: Boudville
+      given-names: Jason
+  year: 2026
