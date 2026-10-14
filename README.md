@@ -2,14 +2,14 @@
 
 > 🗺️ **New here / lost in the iterations? Start with [`MAP.md`](MAP.md)** — the index of every artifact by iteration & owner, with the iteration↔Path key and current state.
 
-> **Status: COMPLETE — a bounded result across four pre-registered iterations.**
-> Does relational structure improve linear-probe detection of related AI-safety concepts? The answer, replicated across two models (Gemma-2-9B and, by independent peer replication, Gemma-4-E4B):
+> **Status: COMPLETE — a bounded result across four iterations, with every powered test after the first exploratory iteration pre-registered.**
+> Does relational structure improve linear-probe detection of related AI-safety concepts? The answer, replicated across two models (Gemma-2-9B and, by peer replication, Gemma-4-E4B):
 > - **Relations help — but only as local hard-negative contrast.** Training a concept's probe against its directly-related siblings improves discrimination by ~**+0.06 F1**; roughly **one third** of that is shared vocabulary, not deep structure.
 > - **The graph's connectivity adds nothing measurable on this graph.** The alternate-path / Menger test (held-out-edge) sits at ~**+0.01**, and a pre-registered **10× within-model scaling sweep** does not raise it (top volume +0.005, 95% CI [−0.005, +0.014]; net of vocabulary −0.006). That rules out a benefit much above +0.015 F1, not one near the minimum detectable effect (0.014). The graph is small (15 concepts, 26 edges, ≤4 alternate paths per edge), so the null is scoped to it.
-> - **Deployment boundary:** each negative-selection scheme seals only the boundary face it trains against; on legitimate influence (negotiation, advertising, lobbying) no scheme helps — FPR ≈0.23 on held-out contexts ([`NEAR_OOS_RESULT_NOTE.md`](NEAR_OOS_RESULT_NOTE.md)).
+> - **Deployment boundary:** each negative-selection scheme seals only the boundary face it trains against; on legitimate influence (negotiation, advertising, lobbying) none of the three schemes tested helps — FPR ≈0.23 on held-out contexts ([`NEAR_OOS_RESULT_NOTE.md`](NEAR_OOS_RESULT_NOTE.md)).
 > - **Account (post hoc):** independent-constraint boundary coverage — negatives place boundary facets; path counts matter only insofar as they count *independent* constraints.
 >
-> The arc: iterations 1–2 (powered, pre-registered null on connectivity) → iteration 3 / Path 2 (relations-as-hard-negatives, bounded positive) → iteration 4 (null on alternate-path scaling under the locked rule) → near-OOS rejection test. The honest nulls are the point. **Start at [`MAP.md`](MAP.md); the plain-English explainer is [`iteration4_scaling/PRIMER.md`](iteration4_scaling/PRIMER.md); the paper is [`paper/main.tex`](paper/main.tex) (build: [`paper/README.md`](paper/README.md)).**
+> The arc: iteration 1 (exploratory) → iteration 2 (powered, pre-registered null on connectivity) → iteration 3 / Path 2 (relations-as-hard-negatives, bounded positive) → iteration 4 (null on alternate-path scaling under the locked rule) → near-OOS rejection test. The honest nulls are the point. **Start at [`MAP.md`](MAP.md); the plain-English explainer is [`iteration4_scaling/PRIMER.md`](iteration4_scaling/PRIMER.md); the paper is [`paper/main.tex`](paper/main.tex) (build: [`paper/README.md`](paper/README.md)).**
 
 > **Reproduce:** source-text data is committed (`data/*.json`); only the GPU activation extract + sweep need re-running. Canonical path for the headline (iteration 4): [`iteration4_scaling/RUNBOOK.md`](iteration4_scaling/RUNBOOK.md) STEP 1–4 (extraction recipe in [`R4_LAMBDA_RECIPE.md`](R4_LAMBDA_RECIPE.md)). Environment: [`requirements.txt`](requirements.txt). Earlier iterations: [`scripts/README.md`](scripts/README.md).
 
