@@ -2,7 +2,7 @@
 # Versions left unpinned for portability; pin if you need an exact-reproduction lock.
 #
 # Two-machine split (see scripts/README.md and R4_LAMBDA_RECIPE.md):
-#   - analysis + data generation + figures + slides:  laptop / CPU
+#   - analysis + data generation + figures:           laptop / CPU
 #   - activation extraction (the *.pt files):          GPU box (e.g. Lambda A100)
 
 # --- core analysis (laptop / CPU) ---
@@ -11,7 +11,6 @@ scipy
 scikit-learn
 networkx                # Menger / graph connectivity
 matplotlib              # figures
-python-pptx             # presentation deck builders (paper/slides/)
 
 # --- data generation + blind audits (needs ANTHROPIC_API_KEY) ---
 anthropic

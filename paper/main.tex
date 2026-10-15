@@ -23,7 +23,7 @@
 \title{Knowing the Graph: Does Relational Structure Improve\\Linear-Probe Detection of Related AI-Safety Concepts?}
 \author{Jason Boudville\\[2pt]
 \small Independent; carried out during the TARA program\\[6pt]
-\small Second-model results: independent peer replication and extension by \textbf{p0ss} (HatCat)}
+\small Second-model results: peer replication and extension by \textbf{p0ss} (HatCat)}
 \date{}
 
 \begin{document}
@@ -32,7 +32,7 @@
 \begin{abstract}
 AI-safety concepts such as manipulation, deception and sycophancy are related to one another: they form a
 graph of siblings and hubs rather than a list of independent categories. We ask whether knowing that graph
-improves linear-probe detection of 15 related concepts in the residual stream of Gemma-2-9B, with an independent
+improves linear-probe detection of 15 related concepts in the residual stream of Gemma-2-9B, with a
 peer replication on Gemma-4-E4B. Across four iterations, with every powered test after the first pre-registered,
 we find two results. First, relations help as \emph{local hard negatives}: a concept's declared siblings are
 more confusable with it than unrelated concepts (\dF{} $+0.055$ across 15 concepts, Wilcoxon
@@ -47,7 +47,7 @@ of $0.014$. The test is also limited by the graph itself (15 concepts, 26 edges,
 per edge), so we scope the null to this graph. We describe a post-hoc account, \emph{independent-constraint
 boundary coverage}, that fits both results, and draw a deployment consequence: each negative-selection scheme
 seals only the boundary face it trains against. On a pre-specified test with legitimate-influence passages
-(negotiation, advertising, lobbying), no scheme reduces false positives, which stay near $0.23$ on held-out
+(negotiation, advertising, lobbying), none of the three schemes tested reduces false positives, which stay near $0.23$ on held-out
 contexts.
 \end{abstract}
 
@@ -74,9 +74,9 @@ graph we could test. We also report where the useful part stops: negatives chose
 legitimate influence that sits just outside the concept family.
 
 The route to this answer is part of the result. Our first iteration produced an apparent positive that did not
-survive adversarial checking (Appendix~\ref{app:history}). After it, every powered test was pre-registered with a
+survive a powered replication (Appendix~\ref{app:history}). After it, every powered test was pre-registered with a
 locked decision rule, every positive result was checked by an independent refutation pass, and the study was
-independently replicated and extended on a second model by p0ss, who originated the hypothesis. The
+replicated and extended on a second model by p0ss, who originated the hypothesis. The
 pre-registration documents and their commit history are public (Appendix~\ref{app:prereg}).
 
 \paragraph{Contributions.}
@@ -91,7 +91,7 @@ pre-registration documents and their commit history are public (Appendix~\ref{ap
   \item An account of the pattern in terms of independent boundary constraints rather than path counts, stated
         with its limits (\S\ref{sec:account}).
   \item A measured deployment boundary: a rejection test on legitimate influence, pre-specified before it was
-        run, in which no negative-selection scheme helps (\S\ref{sec:deploy}).
+        run, in which none of the three negative-selection schemes tested helps (\S\ref{sec:deploy}).
 \end{enumerate}
 
 % =====================================================================================================
@@ -562,7 +562,7 @@ exploit.
 % =====================================================================================================
 \section*{Contributions and acknowledgements}
 J.B. designed and ran iterations 1--4, the Path-2 test, the scaling sweep, the near-out-of-set controls and
-rejection test, and wrote the paper. p0ss (HatCat) performed the independent peer replication on Gemma-4-E4B and
+rejection test, and wrote the paper. p0ss (HatCat) performed the peer replication on Gemma-4-E4B and
 contributed the hard-negative reframing, the graph-contrastive test design and contrastive boundary graph, the layer
 sweep and anisotropy control, the two-level probe, the multi-scale and confuser-coverage analyses, and the
 boundary-coverage account. At p0ss's request their work is credited as a peer replication rather than

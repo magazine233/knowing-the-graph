@@ -14,7 +14,7 @@
 | (later) | generate-mode vs read-mode | **Path 3** | not started |
 
 ## Owners
-- **Jason (lead):** iterations 1–4 — pre-registrations, controls, the paper + slides.
+- **Jason (lead):** iterations 1–4 — pre-registrations, controls, the paper.
 - **p0ss (mentor):** `REPLICATION_WRITEUP.md`, `scripts/capstone_*`, `results/capstone_replication/` — E4B replication, related-negative + graph-contrastive follow-ups.
 
 ## Artifacts by type
@@ -25,7 +25,7 @@
 - **iter 3 (Path 2):** `ITERATION3_TIMELINE.md` · `PATH2_PREREGISTRATION.md` · `PATH2_CONTROLS_NOTE.md` · `results/path2_*.json`
 - **iter 4 (scaling):** `iteration4_scaling/` — `PRIMER.md` (concepts, start here) · `RUNBOOK.md` (step-by-step run) · `PREREGISTRATION.md` (locked) · `ITERATION4_results_explorer.ipynb` (STEP 4: decision rule + E4B overlay + figs) · `figures/` (presentation PNGs) · `results/iteration4_scaling/` · per-edge / vocabulary follow-ups: `scripts/iteration4_vocab_control.py`, `scripts/iteration4_menger_per_edge.py` · near-OOS: `scripts/generate_near_oos_controls.py` + `audit/audit_near_oos.py` → `data/near_oos_controls.json`; test `scripts/near_oos_rejection.py` → `results/near_oos_rejection/`, write-up `NEAR_OOS_RESULT_NOTE.md`
 - **p0ss (replication):** `REPLICATION_WRITEUP.md` · `results/capstone_replication/` · `scripts/capstone_*`
-- **deliverable:** `paper/` — `main.tex` + `references.bib` + `figures/` (build: `paper/README.md`) · `slides/`
+- **deliverable:** `paper/` — `main.tex` + `references.bib` + `figures/` (build: `paper/README.md`)
 - **shared machinery — DO NOT MOVE (both pipelines reference these paths):** `scripts/` `data/` `activations/` `audit/` `pivot/` `results/`
 
 ## Current state (one line)

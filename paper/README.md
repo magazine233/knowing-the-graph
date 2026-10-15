@@ -8,7 +8,6 @@ The submission source for *Knowing the Graph*.
 | `references.bib` | Bibliography. |
 | `figures/make_figures.py` | Regenerates every figure from committed result JSONs. |
 | `figures/*.pdf` | Vector figures used by `main.tex` (PNG previews alongside). |
-| `slides/` | The 10-minute talk (predates the final paper; numbers match, framing is the talk's). |
 
 ## Build
 

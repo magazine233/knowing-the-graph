@@ -11,7 +11,7 @@ Working literature review for the capstone. The current version is **`lit_review
 | [`influence_lexical_sweep.md`](influence_lexical_sweep.md) | ✓ current | Lexical/keyword sweep of influence-cluster terms; surfaced the SUMO statistical-insufficiency finding (see [`../LESSONS_LEARNT.md`](../LESSONS_LEARNT.md) §SUMO shortfall) |
 | [`archive/lit_review.pdf`](archive/lit_review.pdf) | superseded (v1) | Original lit review |
 | [`archive/lit_reviewV2.md`](archive/lit_reviewV2.md) | superseded (v2) | Intermediate revision; superseded by V3 |
-| [`reference/Characterising_Manipulation_from_AI_Systems.pdf`](reference/Characterising_Manipulation_from_AI_Systems.pdf) | external | Reference paper |
+| [Carroll, Chan, Ashton & Krueger (2023), *Characterizing Manipulation from AI Systems*, arXiv:2303.09387](https://arxiv.org/abs/2303.09387) | external | Reference paper (linked, not redistributed) |
 
 ## Cross-references
 
