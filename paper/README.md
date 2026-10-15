@@ -36,7 +36,7 @@ Overleaf works too: upload `main.tex`, `references.bib` and `figures/`.
 | §7 near-OOS, Table 3 (9B rows), Fig. 4 | `results/near_oos_rejection/near_oos_rejection.json` |
 | §3 audit self-match | `audit/condition_a_audit.json`, `audit/near_oos_audit.json` |
 | §7 "34% held-out TPR" | reported in `REPLICATION_WRITEUP.md` (no committed result file) |
-| Appendix B commit hashes | development history at `github.com/magazine233/ARENA_3.0`, `project/capstone/` |
+| Appendix B commit hashes | development repository history, `project/capstone/` (not public; available on request) |
 
 The per-volume paired statistics and per-edge tables were computed from the gitignored
 `results/iteration4_scaling/sweep_n*_rows.json` by `scripts/iteration4_vocab_control.py`; the compact outputs are
